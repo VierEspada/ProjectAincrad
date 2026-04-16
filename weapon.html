@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>武器図鑑</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <div class="logo">Aincrad // WEAPON DATABASE</div>
+    <div class="status">ONLINE</div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="title">WEAPON INDEX</h1>
+
+    <!-- 🔍 検索 -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="武器名で検索..." oninput="searchWeapons()">
+    </div>
+
+    <!-- フィルター -->
+    <div class="filters">
+      <button class="filter active" onclick="filterWeapons('all')">ALL</button>
+      <button class="filter" onclick="filterWeapons('片手剣')">片手剣</button>
+      <button class="filter" onclick="filterWeapons('両手剣')">両手剣</button>
+      <button class="filter" onclick="filterWeapons('短剣')">短剣</button>
+    </div>
+
+    <!-- 武器一覧 -->
+    <section class="grid">
+
+      <div class="weapon-card" data-type="片手剣" data-name="Wooden Sword" data-level="0" data-atk="3.25-5">
+        <img src="WoodenSword.png" class="weapon-img">
+
+        <div class="weapon-info">
+          <h2 class="name">Wooden Sword</h2>
+          <p class="line"><span>LEVEL</span> Lv.0</p>
+          <p class="line"><span>ATK</span> 3.25-5</p>
+          <p class="line"><span>TYPE</span> 片手剣</p>
+        </div>
+      </div>
+
+      <div class="weapon-card" data-type="片手剣" data-name="Bronze Sword" data-level="1" data-atk="13-20">
+        <img src="BronzeSword.png" class="weapon-img">
+
+        <div class="weapon-info">
+          <h2 class="name">Bronze Sword</h2>
+          <p class="line"><span>LEVEL</span> Lv.1</p>
+          <p class="line"><span>ATK</span> 13-20</p>
+          <p class="line"><span>TYPE</span> 片手剣</p>
+        </div>
+      </div>
+
+      <div class="weapon-card" data-type="槍" data-name="Bronze Spear" data-level="1" data-atk="13-21">
+        <img src="images/weapon3.jpg" class="weapon-img">
+
+        <div class="weapon-info">
+          <h2 class="name">Bronze Spear</h2>
+          <p class="line"><span>LEVEL</span> Lv.1</p>
+          <p class="line"><span>ATK</span> 13-21</p>
+          <p class="line"><span>TYPE</span> 槍</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- 🔎 詳細モーダル -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <h2 id="m-name"></h2>
+      <p id="m-level"></p>
+      <p id="m-atk"></p>
+      <p id="m-type"></p>
+    </div>
+  </div>
+
+<script>
+/* ======================
+   フィルター
+====================== */
+function filterWeapons(type) {
+  const cards = document.querySelectorAll(".weapon-card");
+  const buttons = document.querySelectorAll(".filter");
+
+  buttons.forEach(b => b.classList.remove("active"));
+  event.target.classList.add("active");
+
+  cards.forEach(card => {
+    const t = card.dataset.type;
+    card.style.display = (type === "all" || t === type) ? "flex" : "none";
+  });
+}
+
+/* ======================
+   検索
+====================== */
+function searchWeapons() {
+  const value = document.getElementById("searchInput").value.toLowerCase();
+  const cards = document.querySelectorAll(".weapon-card");
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    card.style.display = name.includes(value) ? "flex" : "none";
+  });
+}
+
+/* ======================
+   モーダル
+====================== */
+document.querySelectorAll(".weapon-card").forEach(card => {
+  card.addEventListener("click", () => {
+
+    document.getElementById("m-name").textContent =
+      card.dataset.name;
+
+    document.getElementById("m-level").textContent =
+      "LEVEL: " + card.dataset.level;
+
+    document.getElementById("m-atk").textContent =
+      "ATK: " + card.dataset.atk;
+
+    document.getElementById("m-type").textContent =
+      "TYPE: " + card.dataset.type;
+
+    document.getElementById("modal").style.display = "flex";
+  });
+});
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
