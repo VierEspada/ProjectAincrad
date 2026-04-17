@@ -174,7 +174,7 @@ document.getElementById("search").addEventListener("input", e => {
     (w.name || "").toLowerCase().includes(value) ||
     (w.category || "").toLowerCase().includes(value) ||
     String(w.requiredLevel ?? "").includes(value) ||
-    String(w.attack ?? "").includes(value)
+    
   );
 
   displayWeapons(filtered);
