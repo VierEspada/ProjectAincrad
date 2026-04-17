@@ -1,140 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Orbitron', sans-serif;
-  background: #05070d;
-  color: #bdf6ff;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0f1c;
+  color: #e0f7ff;
+  margin: 0;
 }
 
-/* 背景 */
-.bg {
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0,180,255,0.15), transparent 40%),
-    radial-gradient(circle at 80% 60%, rgba(0,255,200,0.08), transparent 45%),
-    linear-gradient(#05070d, #02030a);
-  z-index: -1;
-}
-
-/* 上部 */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  border-bottom: 1px solid rgba(0,200,255,0.3);
-}
-
-.logo { font-size: 12px; }
-.status { color: #00f0ff; font-size: 12px; }
-
-/* タイトル */
-.title {
+header {
   text-align: center;
-  margin: 20px 0;
+  padding: 20px;
 }
 
-/* 検索 */
-.search-box {
-  text-align: center;
-  margin-bottom: 10px;
+h1 {
+  color: #00eaff;
 }
 
-.search-box input {
+#search {
+  padding: 10px;
   width: 80%;
-  padding: 8px;
-  background: transparent;
-  border: 1px solid rgba(0,200,255,0.4);
-  color: #bdf6ff;
-}
-
-/* フィルター */
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.filter {
-  padding: 5px 8px;
-  font-size: 10px;
-  border: 1px solid rgba(0,200,255,0.4);
-  background: transparent;
-  color: #bdf6ff;
-  cursor: pointer;
-}
-
-.filter.active {
-  background: rgba(0,200,255,0.2);
+  max-width: 400px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: white;
 }
 
 /* グリッド */
 .grid {
   display: grid;
-  gap: 10px;
-  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }
 
 /* カード */
-.weapon-card {
-  display: flex;
-  gap: 10px;
+.card {
+  background: rgba(0, 234, 255, 0.1);
+  border: 1px solid #00eaff;
+  border-radius: 10px;
   padding: 10px;
-  border: 1px solid rgba(0,200,255,0.3);
-  background: rgba(10,20,35,0.5);
+  text-align: center;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.weapon-card img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
+.card:hover {
+  transform: scale(1.05);
 }
 
-/* テキスト */
-.name {
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.line {
-  font-size: 11px;
-  margin: 2px 0;
-}
-
-.line span {
-  display: inline-block;
-  width: 55px;
-  color: #00f0ff;
+/* 画像 */
+.card img {
+  width: 100%;
+  height: auto;
 }
 
 /* モーダル */
 .modal {
-  display: none;
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.7);
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.hidden {
+  display: none;
 }
 
 .modal-content {
-  background: #0b1220;
+  background: #111;
+  margin: 10% auto;
   padding: 20px;
-  border: 1px solid rgba(0,200,255,0.4);
-  width: 80%;
-  max-width: 300px;
-}
-
-.close {
-  float: right;
-  cursor: pointer;
-  color: #00f0ff;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #00eaff;
+  border-radius: 10px;
 }
