@@ -31,5 +31,20 @@
     "tradeable": true,
     "skin": "none",
     "image": "BronzeSword.png"
-  }
+  },
+  {
+    "name": "Bronze Rapier",
+    "requiredLevel": 1,
+    "buyPrice": 420,
+    "sellValue": 210,
+    "category": "Oe Handed/Rapier",
+    "range": "Long-1.07",
+    "weight": 1.5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "BronzeRapier.png"
+  },
 ]
