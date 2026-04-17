@@ -35,9 +35,9 @@ function showDetail(w) {
   content.innerHTML = `
     <h2>${w.name}</h2>
     <img src="${w.image}" style="width:100%">
-    <p>Lv: ${w.level}</p>
-    <p>ATK: ${w.atk}</p>
-    <p>カテゴリー: ${w.category}</p>
+    <p>Level: ${w.level}</p>
+    <p>Attack: ${w.atk}</p>
+    <p>Category: ${w.category}</p>
     <p>${w.description || ""}</p>
     <p>スキル: ${(w.skills || []).join(", ")}</p>
   `;
