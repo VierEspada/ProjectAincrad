@@ -13,7 +13,7 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "WoodenSword.png"
+    "image": "Wooden Sword.png"
   },
   
   {
@@ -30,7 +30,7 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "BronzeSword.png"
+    "image": "Bronze Sword.png"
   },
   {
     "name": "Bronze Rapier",
@@ -45,6 +45,6 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "BronzeRapier.png"
+    "image": "Bronze Rapier.png"
   }
 ]
