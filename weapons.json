@@ -236,6 +236,23 @@
     "tradeable": true,
     "skin": "none",
     "image": "Honor's Call.png"
+  },
+  {
+    "name": "Knight's Sword",
+    "requiredLevel": 2,
+    "attack": "22.09-34",
+    "buyPrice": 950,
+    "sellValue": 475,
+    "type": "Slash",
+    "category": "One Handed/Long Sword",
+    "range": "Long-1.09m",
+    "weight": 4,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Knight's Sword.png"
   }
 ]
 
