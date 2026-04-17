@@ -1,22 +1,32 @@
 [
   {
-    "id": 1,
-    "name": "Wooden Sword",
-    "level": 0,
-    "atk": 3.25-5,
-    "category": "",
-    "image": "WoodenSword.png",
-    "description": "",
-    "skills": 
-  },
+  "name": "Wooden Sword",
+  "requiredLevel": 0,
+  "buyPrice": 50,
+  "sellValue": 25,
+  "category": "武器",
+  "range": "近距離",
+  "weight": 12,
+  "strength": 0,
+  "agility": 0,
+  "unbreakable": Unbreakable,
+  "tradeable": Tradeable,
+  "skin": "none"
+  "image": "WoodenSword.png",
+}
   {
-    "id": 2,
     "name": "Bronze Sword",
-    "level": 1,
-    "atk": 13-20,
-    "category": "",
-    "image": "BronzeSword.png",
-    "description": "",
-    "skills": 
+  "requiredLevel": 1,
+  "buyPrice": 420,
+  "sellValue": 210,
+  "category": "武器",
+  "range": "近距離",
+  "weight": 1,
+  "strength": 0,
+  "agility": 0,
+  "unbreakable": Unbreakable,
+  "tradeable": Tradeable,
+  "skin": "none"
+  "image": "BronzeSword.png", 
   }
 ]
