@@ -15,6 +15,7 @@
     "skin": "none",
     "image": "WoodenSword.png"
   },
+  
   {
     "name": "Bronze Sword",
     "requiredLevel": 1,
