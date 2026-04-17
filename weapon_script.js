@@ -57,7 +57,7 @@ function displayWeapons(list) {
       <img src="${w.image}" onerror="this.style.display='none'">
       <h3>${w.name}</h3>
       <p>Lv.${w.requiredLevel}</p>
-      <p>ATK ${w.attack}</p>
+      
     `;
 
     card.querySelector("input").addEventListener("change", (e) => {
