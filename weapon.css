@@ -16,7 +16,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* 検索バー（強化） */
+/* 検索バー */
 #search {
   padding: 12px;
   width: 90%;
@@ -29,7 +29,7 @@ h1 {
   box-shadow: 0 0 8px rgba(0,234,255,0.2);
 }
 
-/* 一覧グリッド（間隔広げる） */
+/* 一覧グリッド */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -37,7 +37,7 @@ h1 {
   padding: 25px;
 }
 
-/* カード（見やすさ重視） */
+/* カード */
 .card {
   background: rgba(0, 234, 255, 0.08);
   border: 1px solid rgba(0, 234, 255, 0.4);
@@ -55,7 +55,7 @@ h1 {
   box-shadow: 0 0 15px rgba(0,234,255,0.4);
 }
 
-/* 画像 */
+/* 画像（カード内） */
 .card img {
   width: 100%;
   height: 120px;
@@ -77,7 +77,7 @@ h1 {
   font-size: 14px;
 }
 
-/* モーダル */
+/* モーダル背景 */
 .modal {
   position: fixed;
   top: 0;
@@ -85,17 +85,20 @@ h1 {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.85);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   z-index: 9999;
 }
 
+/* 非表示 */
 .hidden {
   display: none;
 }
 
-/* 詳細ウィンドウ */
+/* モーダル中身 */
 .modal-content {
   background: #111827;
   padding: 20px;
@@ -104,14 +107,30 @@ h1 {
   border: 1px solid #00eaff;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,234,255,0.3);
-}
-.modal-content {
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  animation: pop 0.2s ease;
 }
 
+/* モーダル画像 */
 .modal-content img {
-  width: 100%;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
   margin-bottom: 10px;
+}
+
+/* 出現アニメーション */
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
