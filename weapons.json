@@ -2,7 +2,7 @@
   {
     "name": "Wooden Sword",
     "requiredLevel": 0,
-    "attack": 3.25-5,
+    "attack": "3.25-5",
     "buyPrice": 50,
     "sellValue": 25,
     "type": "Blunt",
@@ -19,7 +19,7 @@
   {
     "name": "Bronze Sword",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Slash",
@@ -36,7 +36,7 @@
   {
     "name": "Bronze Rapier",
     "requiredLevel": 1,
-    "attack": 13-21,
+    "attack": "13-21",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Pierce",
@@ -53,7 +53,7 @@
   {
     "name": "Bronze Dagger",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Pierce",
@@ -70,7 +70,7 @@
   {
     "name": "Bronze Axe",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Slash",
@@ -87,7 +87,7 @@
   {
     "name": "Bronze Greatsword",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Slash",
@@ -104,7 +104,7 @@
   {
     "name": "Bronze Greataxe",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Slash",
@@ -121,7 +121,7 @@
   {
     "name": "Bronze Spear",
     "requiredLevel": 1,
-    "attack": 13-21,
+    "attack": "13-21",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Pierce",
@@ -138,7 +138,7 @@
   {
     "name": "Bronze Mace",
     "requiredLevel": 1,
-    "attack": 10.4-16,
+    "attack": "10.4-16",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Blunt",
@@ -155,7 +155,7 @@
   {
     "name": "Bronze Maul",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 420,
     "sellValue": 210,
     "type": "Blunt",
@@ -172,7 +172,7 @@
   {
     "name": "Chopper",
     "requiredLevel": 1,
-    "attack": 13-20,
+    "attack": "13-20",
     "buyPrice": 500,
     "sellValue": 250,
     "type": "Slash",
@@ -189,7 +189,7 @@
   {
     "name": "Cutting Response",
     "requiredLevel":  2,
-    "attack": 22.09-34,
+    "attack": "22.09-34",
     "buyPrice":  950,
     "sellValue":  475,
     "type": "Slash",
@@ -206,7 +206,7 @@
   {
     "name": "Stacked Rapier",
     "requiredLevel":  2,
-    "attack": 22.09-35.69,
+    "attack": "22.09-35.69",
     "buyPrice": 950 ,
     "sellValue":  475,
     "type": "Pierce",
@@ -223,7 +223,7 @@
   {
     "name": "Honor's Call",
     "requiredLevel":  2,
-    "attack": 22.09-34,
+    "attack": "22.09-34",
     "buyPrice":  950,
     "sellValue":  475,
     "type": "Slash",
