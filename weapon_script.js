@@ -15,31 +15,32 @@ const order = [
   "agility"
 ];
 
-// データ読み込み
+// 読み込み
 fetch("weapons.json")
   .then(res => res.json())
   .then(data => {
     weapons = data;
     displayWeapons(weapons);
-  });
+  })
+  .catch(err => console.error("JSON error:", err));
 
-// 一覧
+// 一覧表示
 function displayWeapons(list) {
   const container = document.getElementById("weapon-list");
   container.innerHTML = "";
 
-  list.forEach((w, index) => {
+  list.forEach((w) => {
     const card = document.createElement("div");
     card.className = "card";
 
     card.innerHTML = `
-      <input type="checkbox" data-index="${index}">
-      <img src="${w.image}">
+      <input type="checkbox">
+      <img src="${w.image}" onerror="this.style.display='none'">
       <h3>${w.name}</h3>
       <p>Lv.${w.requiredLevel}</p>
     `;
 
-    // チェック管理
+    // 選択
     card.querySelector("input").addEventListener("change", (e) => {
       if (e.target.checked) {
         selected.push(w);
@@ -48,8 +49,43 @@ function displayWeapons(list) {
       }
     });
 
+    // ★ クリックで詳細表示
+    card.addEventListener("click", (e) => {
+      if (e.target.tagName === "INPUT") return;
+      showDetail(w);
+    });
+
     container.appendChild(card);
   });
+}
+
+// ★ 詳細表示（復活）
+function showDetail(w) {
+  const modal = document.getElementById("modal");
+  const content = document.getElementById("modal-content");
+
+  let html = `
+    <div class="compare-box">
+      <h2>${w.name}</h2>
+      <img src="${w.image}" style="width:180px; display:block; margin:auto;">
+  `;
+
+  order.forEach(key => {
+    if (w[key] !== undefined) {
+      let value = w[key];
+
+      if (typeof value === "boolean") value = value ? "Yes" : "No";
+
+      html += `<p><strong>${key}:</strong> ${value}</p>`;
+    }
+  });
+
+  html += `</div>`;
+
+  content.innerHTML = html;
+  modal.classList.remove("hidden");
+
+  modal.onclick = () => modal.classList.add("hidden");
 }
 
 // 比較ボタン
