@@ -1,6 +1,7 @@
 let weapons = [];
 let selected = [];
 
+// ★13項目すべて表示
 const order = [
   "name",
   "requiredLevel",
@@ -11,7 +12,10 @@ const order = [
   "range",
   "weight",
   "strength",
-  "agility"
+  "agility",
+  "unbreakable",
+  "tradeable",
+  "skin"
 ];
 
 fetch("weapons.json")
@@ -50,9 +54,12 @@ function displayWeapons(list) {
   });
 }
 
+// ★詳細（そのまま2列レイアウト維持で13項目表示）
 function showDetail(w) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
+
+  const bool = v => v ? "Yes" : "No";
 
   let stats = "";
 
@@ -60,8 +67,9 @@ function showDetail(w) {
     if (w[key] !== undefined) {
       let value = w[key];
 
+      // boolean変換
       if (typeof value === "boolean") {
-        value = value ? "Yes" : "No";
+        value = bool(value);
       }
 
       stats += `<p><strong>${key}:</strong> ${value}</p>`;
@@ -71,12 +79,14 @@ function showDetail(w) {
   content.innerHTML = `
     <div class="compare-box">
       <div class="detail-flex">
+
         <img src="${w.image}" onerror="this.style.display='none'">
 
         <div class="detail-stats">
           <h2>${w.name}</h2>
           ${stats}
         </div>
+
       </div>
     </div>
   `;
@@ -85,7 +95,7 @@ function showDetail(w) {
   modal.onclick = () => modal.classList.add("hidden");
 }
 
-// 比較
+// 比較（そのまま）
 document.getElementById("compareBtn").addEventListener("click", () => {
   if (selected.length < 2) {
     alert("2つ以上選んでください");
