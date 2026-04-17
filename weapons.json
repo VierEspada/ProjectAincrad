@@ -20,6 +20,7 @@
     "requiredLevel": 1,
     "buyPrice": 420,
     "sellValue": 210,
+    "type": "Slash",
     "category": "One Handed/Short Sword",
     "range": "Average-0.74",
     "weight": 3,
