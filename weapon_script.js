@@ -44,6 +44,7 @@ fetch("weapons.json")
     displayWeapons(weapons);
   });
 
+// 一覧表示
 function displayWeapons(list) {
   const container = document.getElementById("weapon-list");
   container.innerHTML = "";
@@ -57,7 +58,6 @@ function displayWeapons(list) {
       <img src="${w.image}" onerror="this.style.display='none'">
       <h3>${w.name}</h3>
       <p>Lv.${w.requiredLevel}</p>
-      
     `;
 
     card.querySelector("input").addEventListener("change", (e) => {
@@ -166,15 +166,14 @@ function showCompare(list) {
   modal.onclick = () => modal.classList.add("hidden");
 }
 
-// 検索
+// 🔍 検索（修正版）
 document.getElementById("search").addEventListener("input", e => {
   const value = e.target.value.toLowerCase();
 
   const filtered = weapons.filter(w =>
     (w.name || "").toLowerCase().includes(value) ||
     (w.category || "").toLowerCase().includes(value) ||
-    String(w.requiredLevel ?? "").includes(value) ||
-    
+    String(w.requiredLevel ?? "").includes(value)
   );
 
   displayWeapons(filtered);
