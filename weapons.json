@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Wooden Sword",
+    "level": 0,
+    "atk": 3.25-5,
+    "category": "",
+    "image": "WoodenSword.png",
+    "description": "",
+    "skills": 
+  },
+  {
+    "id": 2,
+    "name": "Bronze Sword",
+    "level": 1,
+    "atk": 13-20,
+    "category": "",
+    "image": "BronzeSword.png",
+    "description": "",
+    "skills": 
+  }
+]
