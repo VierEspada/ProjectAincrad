@@ -270,6 +270,57 @@
     "tradeable": true,
     "skin": "none",
     "image": "Sucker Punch.png"
+  },
+  {
+    "name": "Iron Scythe",
+    "requiredLevel": 2,
+    "attack": "24.31-37.4",
+    "buyPrice": 970,
+    "sellValue": 485,
+    "type": "Slash",
+    "category": "Two Handed/Scythe",
+    "range": "Long-1.43m",
+    "weight": 3.5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Iron Scythe.png"
+  },
+  {
+    "name": "Halberd",
+    "requiredLevel": 2,
+    "attack": "22.09-34",
+    "buyPrice": 850,
+    "sellValue": 425,
+    "type": "Slash",
+    "category": "Two Handed/Great Axe",
+    "range": "Long-1.39m",
+    "weight": 5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Halberd.png"
+  },
+  {
+    "name": "Sharp Spear",
+    "requiredLevel": 2,
+    "attack": "22.09-35.69",
+    "buyPrice": 950,
+    "sellValue": 475,
+    "type": "Pierce",
+    "category": "Two Handed/Spear",
+    "range": "Long-1.01m",
+    "weight": 5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Sharp Spear.png"
   }
 ]
 
