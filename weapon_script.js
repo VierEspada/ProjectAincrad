@@ -1,13 +1,12 @@
 let weapons = [];
 
-// 表示ラベル
 const labels = {
   name: "Weapon Name",
   requiredLevel: "Required Level",
   buyPrice: "Buy Price",
   sellValue: "Sell Value",
-  category: "Category",
   type: "Type",
+  category: "Category",
   range: "Range",
   weight: "Weight",
   strength: "Strength",
@@ -17,7 +16,6 @@ const labels = {
   skin: "Skin"
 };
 
-// 表示順
 const order = [
   "name",
   "requiredLevel",
@@ -34,16 +32,15 @@ const order = [
   "skin"
 ];
 
-// データ読み込み
+// 読み込み
 fetch("weapons.json")
   .then(res => res.json())
   .then(data => {
     weapons = data;
     displayWeapons(weapons);
-  })
-  .catch(err => console.error("JSON読み込みエラー:", err));
+  });
 
-// 一覧表示
+// 一覧
 function displayWeapons(list) {
   const container = document.getElementById("weapon-list");
   container.innerHTML = "";
@@ -53,7 +50,7 @@ function displayWeapons(list) {
     card.className = "card";
 
     card.innerHTML = `
-      <img src="${w.image || ''}" alt="${w.name}">
+      <img src="${w.image}">
       <h3>${w.name}</h3>
       <p>Lv.${w.requiredLevel ?? "-"}</p>
     `;
@@ -64,61 +61,46 @@ function displayWeapons(list) {
   });
 }
 
-// 詳細表示
+// 詳細（2カラム）
 function showDetail(w) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
 
-  let html = `<h2>${w.name}</h2>`;
-  html += `<img src="${w.image || ''}" style="width:100%">`;
+  let right = `<h2>${w.name}</h2>`;
 
-  // 固定順表示
   order.forEach(key => {
     if (w[key] !== undefined) {
       let value = w[key];
 
-      // 配列対応
-      if (Array.isArray(value)) {
-        value = value.join(", ");
-      }
-
-      // true / false 表示
+      if (Array.isArray(value)) value = value.join(", ");
       if (value === true) value = "Yes";
       if (value === false) value = "No";
 
-      // 単位追加
       if (key === "requiredLevel") value += " Lv";
       if (key === "buyPrice") value += " Col";
       if (key === "sellValue") value += " Col";
       if (key === "range") value += " m";
       if (key === "weight") value += " kg";
 
-      html += `<p><strong>${labels[key] || key}:</strong> ${value}</p>`;
+      right += `<p><strong>${labels[key] || key}:</strong> ${value}</p>`;
     }
   });
 
-  // 追加項目（自由拡張）
-  for (let key in w) {
-    if (!order.includes(key) && key !== "image") {
-      let value = w[key];
-
-      if (Array.isArray(value)) {
-        value = value.join(", ");
-      }
-
-      html += `<p><strong>${key}:</strong> ${value}</p>`;
-    }
-  }
-
-  content.innerHTML = html;
+  content.innerHTML = `
+    <div class="modal-left">
+      <img src="${w.image}">
+    </div>
+    <div class="modal-right">
+      ${right}
+    </div>
+  `;
 
   modal.classList.remove("hidden");
 
-  // 背景クリックで閉じる
   modal.onclick = () => modal.classList.add("hidden");
 }
 
-// 検索機能
+// 検索
 document.getElementById("search").addEventListener("input", e => {
   const value = e.target.value.toLowerCase();
 
