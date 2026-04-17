@@ -13,7 +13,7 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "weapon/WoodenSword.png"
+    "image": "WoodenSword.png"
   },
   {
     "name": "Bronze Sword",
@@ -29,6 +29,6 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "weapon/BronzeSword.png"
+    "image": "BronzeSword.png"
   }
 ]
