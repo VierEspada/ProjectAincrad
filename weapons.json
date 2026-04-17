@@ -46,5 +46,20 @@
     "tradeable": true,
     "skin": "none",
     "image": "Bronze Rapier.png"
+  },
+  {
+    "name": "Bronze Dagger",
+    "requiredLevel": 1,
+    "buyPrice": 420,
+    "sellValue": 210,
+    "category": "One Handed/Dagger",
+    "range": "Short-0.38",
+    "weight": 0.5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Bronze Dagger.png"
   }
 ]
