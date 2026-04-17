@@ -64,7 +64,7 @@ function showDetail(w) {
   let stats = "";
 
   order.forEach(key => {
-    if (w[key] !== undefined) {
+    if (w[key] !== undefined && w[key] !== null) {
       let value = w[key];
 
       // boolean変換
