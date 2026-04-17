@@ -15,7 +15,7 @@ const order = [
   "agility"
 ];
 
-// 読み込み
+// データ読み込み
 fetch("weapons.json")
   .then(res => res.json())
   .then(data => {
@@ -40,7 +40,7 @@ function displayWeapons(list) {
       <p>Lv.${w.requiredLevel}</p>
     `;
 
-    // 選択
+    // チェック管理
     card.querySelector("input").addEventListener("change", (e) => {
       if (e.target.checked) {
         selected.push(w);
@@ -49,9 +49,9 @@ function displayWeapons(list) {
       }
     });
 
-    // ★ クリックで詳細表示
+    // ★ 詳細表示（安定版）
     card.addEventListener("click", (e) => {
-      if (e.target.tagName === "INPUT") return;
+      if (e.target.closest("input")) return;
       showDetail(w);
     });
 
@@ -59,7 +59,7 @@ function displayWeapons(list) {
   });
 }
 
-// ★ 詳細表示（復活）
+// ★ 詳細表示
 function showDetail(w) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -67,14 +67,16 @@ function showDetail(w) {
   let html = `
     <div class="compare-box">
       <h2>${w.name}</h2>
-      <img src="${w.image}" style="width:180px; display:block; margin:auto;">
+      <img src="${w.image}" onerror="this.style.display='none'" style="width:180px; display:block; margin:auto;">
   `;
 
   order.forEach(key => {
     if (w[key] !== undefined) {
       let value = w[key];
 
-      if (typeof value === "boolean") value = value ? "Yes" : "No";
+      if (typeof value === "boolean") {
+        value = value ? "Yes" : "No";
+      }
 
       html += `<p><strong>${key}:</strong> ${value}</p>`;
     }
@@ -98,7 +100,7 @@ document.getElementById("compareBtn").addEventListener("click", () => {
   showCompare(selected);
 });
 
-// 比較表示
+// ★ 比較表示（安全版）
 function showCompare(list) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -115,10 +117,17 @@ function showCompare(list) {
     html += `<tr><td>${key}</td>`;
 
     let values = list.map(w => w[key] ?? "-");
-    let max = Math.max(...values.filter(v => typeof v === "number"));
+
+    // 数値変換（バグ対策）
+    let numericValues = values
+      .map(v => Number(v))
+      .filter(v => !isNaN(v));
+
+    let max = numericValues.length ? Math.max(...numericValues) : null;
 
     values.forEach(v => {
-      let cls = (typeof v === "number" && v === max) ? "better" : "";
+      let num = Number(v);
+      let cls = (max !== null && num === max) ? "better" : "";
       html += `<td class="${cls}">${v}</td>`;
     });
 
@@ -133,7 +142,7 @@ function showCompare(list) {
   modal.onclick = () => modal.classList.add("hidden");
 }
 
-// 検索
+// 検索（0対応済み）
 document.getElementById("search").addEventListener("input", e => {
   const value = e.target.value.toLowerCase();
 
