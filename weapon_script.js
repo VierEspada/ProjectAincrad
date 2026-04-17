@@ -1,21 +1,5 @@
 let weapons = [];
-
-// 表示ラベル
-const labels = {
-  name: "Weapon Name",
-  requiredLevel: "Required Level",
-  buyPrice: "Buy Price",
-  sellValue: "Sell Value",
-  type: "Type",
-  category: "Category",
-  range: "Range",
-  weight: "Weight",
-  strength: "Strength",
-  agility: "Agility",
-  unbreakable: "Unbreakable",
-  tradeable: "Tradeable",
-  skin: "Skin"
-};
+let selected = [];
 
 // 表示順
 const order = [
@@ -28,10 +12,7 @@ const order = [
   "range",
   "weight",
   "strength",
-  "agility",
-  "unbreakable",
-  "tradeable",
-  "skin"
+  "agility"
 ];
 
 // データ読み込み
@@ -40,69 +21,83 @@ fetch("weapons.json")
   .then(data => {
     weapons = data;
     displayWeapons(weapons);
-  })
-  .catch(err => console.error("JSONエラー:", err));
+  });
 
-// 一覧表示
+// 一覧
 function displayWeapons(list) {
   const container = document.getElementById("weapon-list");
   container.innerHTML = "";
 
-  list.forEach(w => {
+  list.forEach((w, index) => {
     const card = document.createElement("div");
     card.className = "card";
 
     card.innerHTML = `
+      <input type="checkbox" data-index="${index}">
       <img src="${w.image}">
       <h3>${w.name}</h3>
-      <p>Lv.${w.requiredLevel ?? "-"}</p>
+      <p>Lv.${w.requiredLevel}</p>
     `;
 
-    card.onclick = () => showDetail(w);
+    // チェック管理
+    card.querySelector("input").addEventListener("change", (e) => {
+      if (e.target.checked) {
+        selected.push(w);
+      } else {
+        selected = selected.filter(i => i !== w);
+      }
+    });
 
     container.appendChild(card);
   });
 }
 
-// 詳細表示（2カラム）
-function showDetail(w) {
+// 比較ボタン
+document.getElementById("compareBtn").addEventListener("click", () => {
+  if (selected.length < 2) {
+    alert("2つ以上選んでください");
+    return;
+  }
+
+  showCompare(selected);
+});
+
+// 比較表示
+function showCompare(list) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
 
-  let right = `<h2>${w.name}</h2>`;
+  let html = `<div class="compare-box"><table><tr><th>Stat</th>`;
 
-  order.forEach(key => {
-    if (w[key] !== undefined) {
-      let value = w[key];
-
-      if (Array.isArray(value)) value = value.join(", ");
-      if (value === true) value = "Yes";
-      if (value === false) value = "No";
-
-      if (key === "requiredLevel") value += " Lv";
-      if (key === "buyPrice") value += " Col";
-      if (key === "sellValue") value += " Col";
-      if (key === "range") value += " m";
-      if (key === "weight") value += " kg";
-
-      right += `<p><strong>${labels[key] || key}:</strong> ${value}</p>`;
-    }
+  list.forEach(w => {
+    html += `<th>${w.name}</th>`;
   });
 
-  content.innerHTML = `
-    <div class="modal-left">
-      <img src="${w.image}">
-    </div>
-    <div class="modal-right">
-      ${right}
-    </div>
-  `;
+  html += `</tr>`;
 
+  order.forEach(key => {
+    html += `<tr><td>${key}</td>`;
+
+    let values = list.map(w => w[key] ?? "-");
+    let max = Math.max(...values.filter(v => typeof v === "number"));
+
+    values.forEach(v => {
+      let cls = (typeof v === "number" && v === max) ? "better" : "";
+      html += `<td class="${cls}">${v}</td>`;
+    });
+
+    html += `</tr>`;
+  });
+
+  html += `</table></div>`;
+
+  content.innerHTML = html;
   modal.classList.remove("hidden");
+
   modal.onclick = () => modal.classList.add("hidden");
 }
 
-// 🔥 検索バグ修正済み（0対応）
+// 検索
 document.getElementById("search").addEventListener("input", e => {
   const value = e.target.value.toLowerCase();
 
