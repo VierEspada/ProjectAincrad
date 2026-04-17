@@ -4,6 +4,7 @@
     "requiredLevel": 0,
     "buyPrice": 50,
     "sellValue": 25,
+    "type": "Blunt",
     "category": "One Handed/Sword",
     "range": "Average-0.78",
     "weight": 1,
