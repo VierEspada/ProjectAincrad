@@ -6,7 +6,6 @@ const labels = {
   requiredLevel: "Required Level",
   buyPrice: "Buy Price",
   sellValue: "Sell Value",
-  type: "Type",
   category: "Category",
   range: "Range",
   weight: "Weight",
@@ -81,6 +80,10 @@ function showDetail(w) {
       }
 
       // true/false変換
+      if (key === "requiredLevel") value = value + " Lv";
+      if (key === "buyPrice") value = value + " Col";
+      if (key === "sellValue") value = value + " Col";
+      if (key === "range") value = value + " m";
       if (value === true) value = "Yes";
       if (value === false) value = "No";
 
