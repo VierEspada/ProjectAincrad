@@ -62,5 +62,21 @@
     "tradeable": true,
     "skin": "none",
     "image": "Bronze Dagger.png"
+  },
+  {
+    "name": "Bronze Axe",
+    "requiredLevel": 1,
+    "buyPrice":  420,
+    "sellValue":  210,
+    "type": "Slash",
+    "category": "One Handed/Axe",
+    "range": "Average-0.75",
+    "weight": 4.5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Bronze Axe.png"
   }
 ]
