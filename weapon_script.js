@@ -1,5 +1,6 @@
 let weapons = [];
 
+// 表示ラベル
 const labels = {
   name: "Weapon Name",
   requiredLevel: "Required Level",
@@ -16,6 +17,7 @@ const labels = {
   skin: "Skin"
 };
 
+// 表示順
 const order = [
   "name",
   "requiredLevel",
@@ -32,15 +34,16 @@ const order = [
   "skin"
 ];
 
-// 読み込み
+// データ読み込み
 fetch("weapons.json")
   .then(res => res.json())
   .then(data => {
     weapons = data;
     displayWeapons(weapons);
-  });
+  })
+  .catch(err => console.error("JSONエラー:", err));
 
-// 一覧
+// 一覧表示
 function displayWeapons(list) {
   const container = document.getElementById("weapon-list");
   container.innerHTML = "";
@@ -61,7 +64,7 @@ function displayWeapons(list) {
   });
 }
 
-// 詳細（2カラム）
+// 詳細表示（2カラム）
 function showDetail(w) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -96,18 +99,17 @@ function showDetail(w) {
   `;
 
   modal.classList.remove("hidden");
-
   modal.onclick = () => modal.classList.add("hidden");
 }
 
-// 検索
+// 🔥 検索バグ修正済み（0対応）
 document.getElementById("search").addEventListener("input", e => {
   const value = e.target.value.toLowerCase();
 
   const filtered = weapons.filter(w =>
     (w.name || "").toLowerCase().includes(value) ||
     (w.category || "").toLowerCase().includes(value) ||
-    (w.requiredLevel || "").toString().includes(value)
+    String(w.requiredLevel ?? "").includes(value)
   );
 
   displayWeapons(filtered);
