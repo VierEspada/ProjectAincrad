@@ -24,6 +24,10 @@ button {
   font-weight: bold;
 }
 
+header button {
+  margin: 5px;
+}
+
 #search {
   padding: 12px;
   width: 90%;
