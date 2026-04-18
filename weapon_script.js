@@ -178,3 +178,6 @@ document.getElementById("search").addEventListener("input", e => {
 
   displayWeapons(filtered);
 });
+function goHome() {
+  window.location.href = "index.html";
+}
