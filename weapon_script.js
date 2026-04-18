@@ -122,7 +122,7 @@ function showDetail(w) {
 // 比較
 document.getElementById("compareBtn").addEventListener("click", () => {
   if (selected.length < 2) {
-    alert("2つ以上選んでください");
+    alert("Pick 2 or more. 2つ以上選んでください");
     return;
   }
 
