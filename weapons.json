@@ -1188,6 +1188,40 @@
     "tradeable": false,
     "skin": "none",
     "image": "Inkvoid.png"
+  },
+  {
+    "name": "Broken Runes",
+    "requiredLevel":  10,
+    "attack": "60-80.01",
+    "buyPrice":  "Event",
+    "sellValue":  0,
+    "type": "Slash",
+    "category": "Two Handed/Long Sword",
+    "range": "Long-1.38m",
+    "weight": 5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Broken Runes.png"
+  },
+  {
+    "name": "Signal Smasher",
+    "requiredLevel":  10,
+    "attack": "60-80.01",
+    "buyPrice":  "Event",
+    "sellValue":  0,
+    "type": "Blunt",
+    "category": "One Handed/War Hammer",
+    "range": "Long-1.05m",
+    "weight": 5,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Signal Smasher.png"
   }
 ]
 
