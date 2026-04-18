@@ -1154,6 +1154,40 @@
     "tradeable": true,
     "skin": "none",
     "image": "Last Words.png"
+  },
+  {
+    "name": "Black Metal Katana",
+    "requiredLevel":  10,
+    "attack": "50.05-77",
+    "buyPrice":  "Quest",
+    "sellValue":  8000,
+    "type": "Slash",
+    "category": "One Handed/Katana",
+    "range": "Long-1.03m",
+    "weight": 4,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": false,
+    "skin": "none",
+    "image": "Black Metal Katana.png"
+  },
+  {
+    "name": "Inkvoid",
+    "requiredLevel":  10,
+    "attack": "52.5-73.5",
+    "buyPrice":  "Quest",
+    "sellValue":  0,
+    "type": "Pierce",
+    "category": "Two Handed/Spear",
+    "range": "Long-1.02m",
+    "weight": 2,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": false,
+    "skin": "none",
+    "image": "Inkvoid.png"
   }
 ]
 
