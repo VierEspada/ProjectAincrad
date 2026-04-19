@@ -1222,6 +1222,57 @@
     "tradeable": true,
     "skin": "none",
     "image": "Signal Smasher.png"
+  },
+  {
+    "name": "Vespid Rapier",
+    "requiredLevel":  5,
+    "attack": "32.5-52.49",
+    "buyPrice":  "Monster Drop",
+    "sellValue":  875,
+    "type": "Pierce",
+    "category": "One Handed/Rapier",
+    "range": "Long-1.1m",
+    "weight": 1.1,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Vespid Rapier.png"
+  },
+  {
+    "name": "Quartanier",
+    "requiredLevel":  5,
+    "attack": "32.5-52.49",
+    "buyPrice":  "Monster Drop",
+    "sellValue":  700,
+    "type": "Pierce",
+    "category": "Two Handed/Spear",
+    "range": "Long-1.41m",
+    "weight": 4,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Quartanier.png"
+  },
+  {
+    "name": "Blood Thorn",
+    "requiredLevel":  8,
+    "attack": "40.94-63",
+    "buyPrice":  "Monster Drop",
+    "sellValue":  6000,
+    "type": "Slash",
+    "category": "One Handed/Rapier",
+    "range": "Long-1.13m",
+    "weight": 4,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Blood Thorn.png"
   }
 ]
 
