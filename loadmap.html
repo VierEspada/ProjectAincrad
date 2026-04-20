@@ -12,14 +12,12 @@ body {
   font-family: sans-serif;
 }
 
-/* タイトル */
 .title {
   text-align: center;
   padding: 20px;
   text-shadow: 0 0 10px #00ffff;
 }
 
-/* 戻るボタン */
 .back-btn {
   position: fixed;
   top: 20px;
@@ -32,25 +30,15 @@ body {
   background: rgba(0,0,0,0.4);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 10px rgba(0,255,255,0.3);
-  transition: 0.3s;
 }
 
-.back-btn:hover {
-  box-shadow: 0 0 20px rgba(0,255,255,0.9);
-  transform: scale(1.1);
-}
-
-/* ギャラリー */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 30px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
 }
 
-/* 画像 */
 .gallery img {
   width: 100%;
   border-radius: 10px;
@@ -65,7 +53,6 @@ body {
   box-shadow: 0 0 25px rgba(0,255,255,0.9);
 }
 
-/* モーダル */
 .modal {
   display: none;
   position: fixed;
@@ -74,7 +61,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background:black;
+  background: black;
 }
 
 .modal img {
@@ -82,7 +69,6 @@ body {
   margin: 50px auto;
   max-width: 80%;
   border: 2px solid #00ffff;
-  box-shadow: 0 0 30px #00ffff;
 }
 
 .close {
@@ -104,18 +90,17 @@ body {
 
 <div class="gallery" id="gallery"></div>
 
-<!-- モーダル -->
 <div id="modal" class="modal">
   <span class="close" id="close">&times;</span>
   <img id="modalImg">
 </div>
 
 <script>
-// 🔷 ここに画像追加するだけ
+// 🔷 ここを「実際のファイル名」に合わせる
 const images = [
   "LoadMap1.png",
   "LoadMap2.png",
-  "LoadMap3,png",
+  "LoadMap3.png",
   "LoadMap4.png"
 ];
 
@@ -124,10 +109,16 @@ const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modalImg");
 const close = document.getElementById("close");
 
-// ギャラリー生成
+// 🔷 ギャラリー生成
 images.forEach(file => {
   const img = document.createElement("img");
+
+  // ⭐ ここが重要（imagesフォルダある前提）
   img.src = "images/" + file;
+
+  img.onerror = () => {
+    console.error("画像が見つからない:", img.src);
+  };
 
   img.onclick = () => {
     modal.style.display = "block";
@@ -139,8 +130,6 @@ images.forEach(file => {
 
 // 閉じる
 close.onclick = () => modal.style.display = "none";
-
-// 背景クリックでも閉じる
 modal.onclick = () => modal.style.display = "none";
 </script>
 
