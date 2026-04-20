@@ -230,5 +230,133 @@
     "stack": 64,
     "tradeable": true,
     "image": "Chicken Skewer.png"
+  },
+  {
+    "name": "Veggie Skewer",
+    "buyPrice": 10,
+    "sellValue": 5,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Veggie Skewer.png"
+  },
+  {
+    "name": "Iced Tea",
+    "buyPrice": 8,
+    "sellValue":4 ,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Iced Tea.png"
+  },
+  {
+    "name": "Cup of Tea",
+    "buyPrice": 1,
+    "sellValue":0 ,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Cup of Tea.png"
+  },
+  {
+    "name": "Beef Skewer",
+    "buyPrice": 12,
+    "sellValue": 6,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Beef Skewer.png"
+  },
+  {
+    "name": "Cheese",
+    "buyPrice": 12,
+    "sellValue": 6,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Cheese.png"
+  },
+  {
+    "name": "Whole Watermelon",
+    "buyPrice": 30,
+    "sellValue": 15,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Whole Watermelon.png"
+  },
+  {
+    "name": "Watermelon Slice",
+    "buyPrice": 8,
+    "sellValue": 4,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Watermelon Slice.png"
+  },
+  {
+    "name": "Sparkling Necklace",
+    "buyPrice": "Quest item",
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": false,
+    "image": "Sparkling Necklace.png"
+  },
+  {
+    "name": "Broken Jewel",
+    "buyPrice": "Quest item",
+    "sellValue": 120,
+    "stack": 64,
+    "tradeable": false,
+    "image": "Broken Jewel.png"
+  },
+  {
+    "name": "Metal Scraps",
+    "buyPrice": "Monster Drop",
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": false,
+    "image": "Metal Scraps.png"
+  },
+  {
+    "name": "Love Potion",
+    "buyPrice": "Valentine Event item",
+    "sellValue": 45,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Love Potion.png"
+  },
+  {
+    "name": "Eggnog Potion",
+    "buyPrice": "Christmas Event item",
+    "sellValue": 25,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Eggnog Potion.png"
+  },
+  {
+    "name": "Padoru Kirito",
+    "buyPrice": "Christmas Event item",
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Padoru Kirito.png"
+  },
+  {
+    "name": "Small Present",
+    "buyPrice": "Christmas Event item",
+    "sellValue": 0,
+    "stack": 255,
+    "tradeable": false,
+    "image": "Small Present.png"
+  },
+  {
+    "name": "Medium Present",
+    "buyPrice": "Christmas Event item",
+    "sellValue": 0,
+    "stack": 255,
+    "tradeable": false,
+    "image": "Medium Present.png"
+  },
+  {
+    "name": "Large Present",
+    "buyPrice": "Christmas Event item",
+    "sellValue": 0,
+    "stack": 255,
+    "tradeable": false,
+    "image": "Large Present.png"
   }
 ]
