@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0f1c;
+  color: #e0f7ff;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #00eaff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #00eaff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#search {
+  padding: 12px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #00eaff;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+}
+
+/* 一覧 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 25px;
+}
+
+/* カード */
+.card {
+  background: rgba(0, 234, 255, 0.08);
+  border: 1px solid rgba(0, 234, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00eaff;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.detail-box {
+  background: #111827;
+  padding: 20px;
+  border: 1px solid #00eaff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.detail-box img {
+  width: 150px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.detail-box p {
+  margin: 6px 0;
+}
