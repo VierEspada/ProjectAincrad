@@ -14,5 +14,21 @@
     "stack": 64,
     "tradeable": true,
     "image": "Healing Crystal.png"
+  },
+  {
+    "name": "Teleport Crystal",
+    "buyPrice": 500,
+    "sellValue": 250,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Teleport Crystal.png"
+  },
+  {
+    "name": "Curing Crystal",
+    "buyPrice": 850,
+    "sellValue": 425,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Curing Crystal.png"
   }
 ]
