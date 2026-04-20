@@ -70,5 +70,53 @@
     "stack": 64,
     "tradeable": true,
     "image": "Lunar Tear.png"
+  },
+  {
+    "name": "Red Rose",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Red Rose.png"
+  },
+  {
+    "name": "White Rose",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "White Rose.png"
+  },
+  {
+    "name": "Yellow Rose",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Yellow Rose.png"
+  },
+  {
+    "name": "Orange Rose",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Orenge Rose.png"
+  },
+  {
+    "name": "Pink Rose",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Pink Rose.png"
+  },
+  {
+    "name": "Valentine's Bouquet",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Red Rose.png"
   }
 ]
