@@ -118,5 +118,69 @@
     "stack": 64,
     "tradeable": true,
     "image": "Valentine's Bouquet.png"
+  },
+  {
+    "name": "Scuttle Crab Plush",
+    "buyPrice": 150,
+    "sellValue": 75,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Scuttle Crab Plush.png"
+  },
+  {
+    "name": "Boar Plush",
+    "buyPrice": 100,
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Boar Plush.png"
+  },
+  {
+    "name": "Nepenthes Plush",
+    "buyPrice": 100,
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Nepenthes Plush.png"
+  },
+  {
+    "name": "Wasp Plush",
+    "buyPrice": 100,
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Wasp Plush.png"
+  },
+  {
+    "name": " Wolf Plush",
+    "buyPrice": 100,
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": true,
+    "image": " Wolf Plush.png"
+  },
+  {
+    "name": "Rat Plush",
+    "buyPrice": 300,
+    "sellValue": 150,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Rat Plush.png"
+  },
+  {
+    "name": "Baby Bell",
+    "buyPrice": 100,
+    "sellValue": 50,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Baby Bell.png"
+  },
+  {
+    "name": "Lantern",
+    "buyPrice": 2500,
+    "sellValue": 1250,
+    "stack": 1,
+    "tradeable": true,
+    "image": "Lantern.png"
   }
 ]
