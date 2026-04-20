@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アイテム一覧</title>
+  <link rel="stylesheet" href="item.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎒 Item List</h1>
+
+  <button onclick="goHome()">🏠 Home</button>
+
+  <input type="text" id="search" placeholder="Search（Item Name）">
+</header>
+
+<main>
+  <div id="item-list" class="grid"></div>
+</main>
+
+<!-- モーダル -->
+<div id="modal" class="modal hidden">
+  <div id="modal-content"></div>
+</div>
+
+<script src="item_script.js"></script>
+
+</body>
+</html>
