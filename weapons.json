@@ -1785,7 +1785,7 @@
     "image": "Dark Repulsor.png"
   },
   {
-    "name": "Excalibur Replica (PF)",
+    "name": "Excalibur Replica PF",
     "requiredLevel":  1,
     "attack": "13-20",
     "buyPrice":  Patreon,
@@ -1799,7 +1799,7 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "Excalibur Replica (PF).png"
+    "image": "Excalibur Replica PF.png"
   }
 ]
 
