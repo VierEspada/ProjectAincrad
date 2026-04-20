@@ -38,5 +38,37 @@
     "stack": 3,
     "tradeable": true,
     "image": "Hand Mirror.png"
+  },
+  {
+    "name": "Green Herb",
+    "buyPrice": "採取",
+    "sellValue": 5,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Green Herb.png"
+  },
+  {
+    "name": "Pink Herb",
+    "buyPrice": "採取",
+    "sellValue": 5,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Pink Herb.png"
+  },
+  {
+    "name": "Red Herb",
+    "buyPrice": "採取",
+    "sellValue": 5,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Red Herb.png"
+  },
+  {
+    "name": "Lunar Tear",
+    "buyPrice": "購入不可",
+    "sellValue": "売却不可",
+    "stack": 64,
+    "tradeable": true,
+    "image": "Lunar Tear.png"
   }
 ]
