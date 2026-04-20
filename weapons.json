@@ -1802,6 +1802,23 @@
     "image": "Excalibur Replica PF.png"
   },
   {
+    "name": "Steel Sword",
+    "requiredLevel":  10,
+    "attack": "45.5-70",
+    "buyPrice":  "?",
+    "sellValue":  "?",
+    "type": "Slash",
+    "category": "One Handed/Long Sword",
+    "range": "Long-0m",
+    "weight": 0,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Steel Sword.png"
+  },
+  {
     "name": "不明 Unknown",
     "requiredLevel":  0,
     "attack": "0",
