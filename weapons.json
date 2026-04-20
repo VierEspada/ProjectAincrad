@@ -948,7 +948,7 @@
     "agility": 0,
     "unbreakable": true,
     "tradeable": true,
-    "skin": "none",
+    "skin": "Onyx Rapier",
     "image": "Bloody Rapier.png"
   },
   {
@@ -1766,6 +1766,40 @@
     "tradeable": true,
     "skin": "none",
     "image": "Blue Long Sword.png"
+  },
+  {
+    "name": "Dark Repulsor",
+    "requiredLevel":  1,
+    "attack": "13-20",
+    "buyPrice":  Patreon,
+    "sellValue":  0,
+    "type": "Slash",
+    "category": "One Handed/Long Sword",
+    "range": "Long-1.06m",
+    "weight": 4,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Dark Repulsor.png"
+  },
+  {
+    "name": "Excalibur Replica (PF)",
+    "requiredLevel":  1,
+    "attack": "13-20",
+    "buyPrice":  Patreon,
+    "sellValue":  0,
+    "type": "Slash",
+    "category": "One Handed/Long Sword",
+    "range": "Long-1.34m",
+    "weight": 3,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Excalibur Replica (PF).png"
   }
 ]
 
