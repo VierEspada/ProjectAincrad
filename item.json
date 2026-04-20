@@ -182,5 +182,45 @@
     "stack": 1,
     "tradeable": true,
     "image": "Lantern.png"
+  },
+  {
+    "name": "Yummy Pumpkin",
+    "buyPrice": 250,
+    "sellValue": 125,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Yummy Pumpkin.png"
+  },
+  {
+    "name": "Bread Bun",
+    "buyPrice": 12,
+    "sellValue": 6,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Bread Bun.png"
+  },
+  {
+    "name": "Bread Rall",
+    "buyPrice": 12,
+    "sellValue": 6,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Bread Rall.png"
+  },
+  {
+    "name": "Bread Loaf",
+    "buyPrice": 12,
+    "sellValue": 6,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Bread Loaf.png"
+  },
+  {
+    "name": "Mug of Ale",
+    "buyPrice": 36,
+    "sellValue": 18,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Mug of Ale.png"
   }
 ]
