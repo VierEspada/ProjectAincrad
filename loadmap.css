@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0a0f1c, #05070d);
+  color: #00ffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* タイトル */
+.title {
+  text-align: center;
+  padding: 20px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* ガラスUI */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0,255,255,0.3);
+  border-bottom: 1px solid rgba(0,255,255,0.3);
+}
+
+/* 画像 */
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+
+  border: 1px solid rgba(0,255,255,0.3);
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+
+  transition: all 0.3s ease;
+}
+
+/* ホバーで発光 */
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0,255,255,0.9);
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+.modal img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 30px #00ffff;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: #00ffff;
+  cursor: pointer;
+}
