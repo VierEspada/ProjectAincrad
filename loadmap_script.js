@@ -1,8 +1,8 @@
 const images = [
   "LoadMap1.png",
-  ".jpg",
-  ".jpg",
-  ".jpg"
+  "LoadMap2.png",
+  "LoadMap3.png",
+  "LoadMap4.png"
 ];
 
 const gallery = document.getElementById("gallery");
