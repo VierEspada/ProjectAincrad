@@ -222,5 +222,13 @@
     "stack": 64,
     "tradeable": true,
     "image": "Mug of Ale.png"
+  },
+  {
+    "name": "Chicken Skewer",
+    "buyPrice": 12,
+    "sellValue": 6,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Chicken Skewer.png"
   }
 ]
