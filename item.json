@@ -6,5 +6,13 @@
     "stack": 64,
     "tradeable": true,
     "image": "Potion.png"
+  },
+  {
+    "name": "Healing Crystal",
+    "buyPrice": 2100,
+    "sellValue": 1050,
+    "stack": 64,
+    "tradeable": true,
+    "image": "Healing Crystal.png"
   }
 ]
