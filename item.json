@@ -113,10 +113,10 @@
   },
   {
     "name": "Valentine's Bouquet",
-    "buyPrice": 300,
-    "sellValue": 150,
+    "buyPrice": 1200,
+    "sellValue": 600,
     "stack": 64,
     "tradeable": true,
-    "image": "Red Rose.png"
+    "image": "Valentine's Bouquet.png"
   }
 ]
