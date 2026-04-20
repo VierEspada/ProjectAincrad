@@ -30,5 +30,13 @@
     "stack": 64,
     "tradeable": true,
     "image": "Curing Crystal.png"
+  },
+  {
+    "name": "Hand Mirror",
+    "buyPrice": 250,
+    "sellValue": 125,
+    "stack": 3,
+    "tradeable": true,
+    "image": "Hand Mirror.png"
   }
 ]
