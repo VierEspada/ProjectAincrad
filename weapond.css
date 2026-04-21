@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #e0f7ff;
+  background: linear-gradient(to bottom, #0a0f1c, #101a2e);
+}
+
+/* 上部バー */
+.top-bar {
+  padding: 15px;
+}
+
+.back-btn {
+  color: #00eaff;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid #00eaff;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  background-color: #00eaff;
+  color: #000;
+}
+
+/* レイアウト */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* 左 */
+.left {
+  width: 40%;
+  text-align: center;
+}
+
+.weapon-img {
+  max-width: 80%;
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+}
+
+/* 右 */
+.right {
+  width: 60%;
+}
+
+.weapon-name {
+  font-size: 32px;
+  color: #00eaff;
+}
+
+/* テーブル */
+.weapon-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.weapon-table td {
+  border-bottom: 1px solid #00eaff;
+  padding: 8px;
+}
+
+/* 説明 */
+.description {
+  padding: 20px;
+  border-top: 1px solid #00eaff;
+}
+
+.description h2 {
+  color: #00eaff;
+}
