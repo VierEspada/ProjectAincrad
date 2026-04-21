@@ -21,20 +21,20 @@ const order = [
 
 // 表示名
 const labels = {
-  name: "Name",
-  requiredLevel: "Required Level",
-  attack: "Attack",
-  buyPrice: "Buy Price",
-  sellValue: "Sell Value",
-  type: "Type",
-  category: "Category",
-  range: "Range",
-  weight: "Weight",
+  name: "武器名",
+  requiredLevel: "必要なレベル",
+  attack: "攻撃力",
+  buyPrice: "買値",
+  sellValue: "売値",
+  type: "攻撃方法",
+  category: "武器の種類",
+  range: "長さ",
+  weight: "重さ",
   strength: "Strength",
   agility: "Agility",
   unbreakable: "Unbreakable",
   tradeable: "Tradeable",
-  skin: "Skin"
+  skin: "スキン"
 };
 
 fetch("weapons.json")
