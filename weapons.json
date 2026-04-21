@@ -1819,7 +1819,7 @@
     "image": "Steel Sword.png"
   },
   {
-    "name": "不明 Unknown",
+    "name": "Grieving Blade",
     "requiredLevel":  0,
     "attack": "0",
     "buyPrice":  "0",
@@ -1833,7 +1833,7 @@
     "unbreakable": true,
     "tradeable": true,
     "skin": "none",
-    "image": "Unknown.png"
+    "image": "Grieving Blade.png"
   }
 ]
 
