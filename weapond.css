@@ -72,3 +72,10 @@ body {
 .description h2 {
   color: #00eaff;
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #00eaff;
+}
