@@ -2,80 +2,20 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>SAOマップ</title>
-<style>
-body {
-    margin: 0;
-    background-color: #0a0f1c;
-    font-family: 'Segoe UI', sans-serif;
-    color: #00eaff;
-}
+<title>SAO マップ1</title>
 
-/* マップ全体 */
-.map-container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    border: 2px solid #00eaff;
-    box-shadow: 0 0 15px #00eaff;
-}
-
-/* マップ画像 */
-.map-container img {
-    width: 100%;
-    display: block;
-}
-
-/* アイコン共通 */
-.icon {
-    position: absolute;
-    width: 32px;
-    cursor: pointer;
-    transition: transform 0.2s, filter 0.2s;
-}
-
-.icon:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 5px #00eaff);
-}
-
-/* 種類ごとの色 */
-.chest { filter: hue-rotate(50deg); }
-.shop { filter: hue-rotate(200deg); }
-.quest { filter: hue-rotate(300deg); }
-
-/* タイトル */
-h1 {
-    text-align: center;
-    text-shadow: 0 0 10px #00eaff;
-}
-</style>
+<link rel="stylesheet" href="map1.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<h1>1階層 マップ</h1>
+<h1>フロア1 マップ</h1>
 
-<div class="map-container">
+<div class="map-container" id="map">
     <img src="map.jpg" alt="マップ">
-
-    <!-- 宝箱 -->
-    <a href="chest1.html">
-        <img src="chest.png" class="icon chest" style="top: 40%; left: 30%;">
-    </a>
-
-    <!-- 店 -->
-    <a href="shop1.html">
-        <img src="shop.png" class="icon shop" style="top: 60%; left: 50%;">
-    </a>
-
-    <!-- クエスト -->
-    <a href="quest1.html">
-        <img src="quest.png" class="icon quest" style="top: 25%; left: 70%;">
-    </a>
-
 </div>
 
+<script src="map1_script.js"></script>
 </body>
 </html>
