@@ -19,6 +19,7 @@ fetch('map1.json')
     });
 });
 
+
 /* アイコン画像切り替え */
 function getIcon(type) {
     switch(type) {
