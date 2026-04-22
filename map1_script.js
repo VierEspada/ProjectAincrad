@@ -7,13 +7,15 @@ fetch('map1.json')
         const link = document.createElement('a');
         link.href = item.link;
 
+        // ⭐ 位置はこっちに移す（超重要）
+        link.style.position = 'absolute';
+        link.style.left = item.x + '%';
+        link.style.top = item.y + '%';
+        link.style.transform = 'translate(-50%, -50%)';
+
         const icon = document.createElement('img');
         icon.src = getIcon(item.type);
         icon.className = `icon ${item.type}`;
-
-        // ⭐ 中心基準で配置
-        icon.style.left = item.x + '%';
-        icon.style.top = item.y + '%';
 
         icon.dataset.name = item.name;
 
@@ -32,7 +34,7 @@ function getIcon(type) {
     }
 }
 
-/* ⭐ クリックで座標取得（開発用） */
+/* 座標取得（そのままでOK） */
 const map = document.getElementById('map');
 
 map.addEventListener('click', function(e) {
