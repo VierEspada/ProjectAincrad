@@ -1,0 +1,23 @@
+[
+  {
+    "type": "chest",
+    "name": "宝箱①",
+    "x": 30,
+    "y": 40,
+    "link": "chest1.html"
+  },
+  {
+    "type": "shop",
+    "name": "武器屋",
+    "x": 60,
+    "y": 50,
+    "link": "shop1.html"
+  },
+  {
+    "type": "quest",
+    "name": "クエスト",
+    "x": 70,
+    "y": 20,
+    "link": "quest1.html"
+  }
+]
