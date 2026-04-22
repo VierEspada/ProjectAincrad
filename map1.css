@@ -28,21 +28,23 @@ h1 {
     display: block;
 }
 
-/* アイコン */
-.icon {
+/* ⭐ 位置はaタグが持つ */
+.map-container a {
     position: absolute;
-    width: 32px;
-
-    /* ⭐ これがズレ防止の核心 */
     transform: translate(-50%, -50%);
-    transform-origin: center;
+}
 
+/* アイコン（見た目だけ） */
+.icon {
+    width: 32px;
+    display: block;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
+/* ホバー */
 .icon:hover {
-    transform: translate(-50%, -50%) scale(1.3);
+    transform: scale(1.3);
     filter: drop-shadow(0 0 8px #00eaff);
 }
 
