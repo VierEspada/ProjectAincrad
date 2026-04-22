@@ -10,8 +10,11 @@ fetch('map1.json')
         const icon = document.createElement('img');
         icon.src = getIcon(item.type);
         icon.className = `icon ${item.type}`;
-        icon.style.top = item.y + '%';
+
+        // ⭐ 中心基準で配置
         icon.style.left = item.x + '%';
+        icon.style.top = item.y + '%';
+
         icon.dataset.name = item.name;
 
         link.appendChild(icon);
@@ -19,8 +22,7 @@ fetch('map1.json')
     });
 });
 
-
-/* アイコン画像切り替え */
+/* アイコン画像 */
 function getIcon(type) {
     switch(type) {
         case 'chest': return 'chest.png';
@@ -29,3 +31,15 @@ function getIcon(type) {
         default: return 'icon.png';
     }
 }
+
+/* ⭐ クリックで座標取得（開発用） */
+const map = document.getElementById('map');
+
+map.addEventListener('click', function(e) {
+    const rect = map.getBoundingClientRect();
+
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    console.log(`x: ${x.toFixed(2)}, y: ${y.toFixed(2)}`);
+});
