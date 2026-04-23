@@ -1,0 +1,21 @@
+{
+  "shops": [
+    { "name": "武器屋", "link": "shop1.html" }
+  ],
+  "npcs": [
+    { "name": "NPC1", "link": "npc1.html" },
+    { "name": "NPC2", "link": "npc2.html" },
+    { "name": "NPC3", "link": "npc3.html" }
+  ],
+  "quests": [
+    { "name": "クエスト1", "link": "quest1.html" },
+    { "name": "クエスト2", "link": "quest2.html" }
+  ],
+  "chests": [
+    { "name": "宝箱1", "link": "chest1.html" },
+    { "name": "宝箱2", "link": "chest2.html" }
+  ],
+  "inns": [
+    { "name": "旅館", "link": "inn.html" }
+  ]
+}
