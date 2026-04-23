@@ -8,8 +8,12 @@
     { "name": "NPC3", "link": "npc3.html" }
   ],
   "quests": [
-    { "name": "クエスト1", "link": "quest1.html" },
-    { "name": "クエスト2", "link": "quest2.html" }
+    { "name": "Green Herb Gathering", "link": "tobq1.html" },
+    { "name": "Ester's Herb Supply", "link": "tobq2.html" },
+    { "name": "Stella's Request", "link": "tobq3.html" },
+    { "name": "The Mysterious Flower", "link": "tobq4.html" },
+    { "name": "Being Neighborly", "link": "tobq5.html" },
+    { "name": "Depression's 2nd Wind?", "link": "tobq6.html" }
   ],
   "chests": [
     { "name": "宝箱1", "link": "chest1.html" },
