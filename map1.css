@@ -56,3 +56,22 @@ li:hover {
   background: rgba(0,255,255,0.1);
   color: #ffffff;
 }
+.home-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #00eaff;
+  border: 1px solid #00eaff;
+  background: rgba(10,20,40,0.8);
+  font-size: 14px;
+  z-index: 1000;
+  transition: 0.2s;
+}
+
+/* ホバーで発光（SAO風） */
+.home-btn:hover {
+  background: rgba(0,255,255,0.15);
+  box-shadow: 0 0 10px #00eaff;
+}
