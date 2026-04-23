@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>SAO マップ1</title>
-
-<link rel="stylesheet" href="map1.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>マップ</title>
+  <link rel="stylesheet" href="map1.css">
 </head>
-
 <body>
 
-<h1>フロア1 マップ</h1>
+<div class="container">
 
-<div class="map-container" id="map">
-    <img src="Map1.png" alt="マップ">
+  <!-- マップ（背景だけ） -->
+  <div class="map-area">
+    <img src="Map1.png" id="mapImage">
+  </div>
+
+  <!-- サイド -->
+  <div class="sidebar">
+
+    <h2>マップ</h2>
+
+    <div class="section">
+      <h3>町</h3>
+      <ul id="townList"></ul>
+    </div>
+
+    <div class="section">
+      <h3>地域</h3>
+      <ul id="regionList"></ul>
+    </div>
+
+    <div class="section">
+      <h3>宝箱</h3>
+      <ul id="chestList"></ul>
+    </div>
+
+    <div class="section">
+      <h3>クエスト</h3>
+      <ul id="questList"></ul>
+    </div>
+
+  </div>
+
 </div>
 
 <script src="map1_script.js"></script>
