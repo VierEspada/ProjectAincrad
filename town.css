@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0a0f1a;
+  color: #00eaff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* マップ */
+.map-area {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #0a0f1a, #000);
+}
+
+#mapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* サイド */
+.sidebar {
+  flex: 1;
+  background: rgba(10,20,40,0.95);
+  border-left: 2px solid #00eaff;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 1px solid #00eaff;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,255,255,0.2);
+  transition: 0.2s;
+}
+
+li:hover {
+  background: rgba(0,255,255,0.1);
+  color: #fff;
+}
+
+/* 戻るボタン */
+.home-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #00eaff;
+  border: 1px solid #00eaff;
+  background: rgba(10,20,40,0.8);
+  z-index: 1000;
+}
+
+.home-btn:hover {
+  box-shadow: 0 0 10px #00eaff;
+}
