@@ -1,23 +1,29 @@
-[
-  {
-    "type": "chest",
-    "name": "宝箱①",
-    "x": 30,
-    "y": 40,
-    "link": "chest1.html"
-  },
-  {
-    "type": "shop",
-    "name": "武器屋",
-    "x": 55,
-    "y": 60,
-    "link": "shop1.html"
-  },
-  {
-    "type": "quest",
-    "name": "クエスト",
-    "x": 70,
-    "y": 25,
-    "link": "quest1.html"
-  }
-]
+{
+  "towns": [
+    { "name": "Town of Beginnings", "link": "Tob.html" },
+    { "name": "Cliffside Plaza", "link": "CP.html" },
+    { "name": "Horunka", "link": "Horunka.html" },
+    { "name": "Tolbana", "link": "Tolbana.html" }
+  ],
+  "regions": [
+    { "name": "The Backroads", "link": "The Backroads.html" },
+    { "name": "Deep Forest", "link": "Deep Forest.html" },
+    { "name": "BlackSmith's Hut", "link": "BSH.html" },
+    { "name": "The Pit", "link": "The Pit.html" },
+    { "name": "Mushroom Cavern", "link": "Mushroom Cavern.html" },
+    { "name": "Mining Spot", "link": "Mining Spot.html" },
+    { "name": "Colosseum", "link": "Colosseum.html" },
+    { "name": "Amphitheater", "link": "Amphitheater.html" },
+    { "name": "Fishing Cabin", "link": "Fishing Cabin.html" },
+    { "name": "Camp Spot", "link": ".html" },
+    { "name": "Ruins", "link": "Ruins.html" }
+  ],
+  "chests": [
+    { "name": "#1", "link": "chest1.html" },
+    { "name": "#2", "link": "chest2.html" }
+  ],
+  "quests": [
+    { "name": "Q1", "link": "quest1.html" },
+    { "name": "Q2", "link": "quest2.html" }
+  ]
+}
