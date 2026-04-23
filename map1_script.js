@@ -1,47 +1,23 @@
-fetch('map1.json')
-.then(res => res.json())
-.then(data => {
-    const map = document.getElementById('map');
+fetch("map1.json")
+  .then(res => res.json())
+  .then(data => {
+    createList("townList", data.towns);
+    createList("regionList", data.regions);
+    createList("chestList", data.chests);
+    createList("questList", data.quests);
+  });
 
-    data.forEach(item => {
-        const link = document.createElement('a');
-        link.href = item.link;
+function createList(id, items) {
+  const list = document.getElementById(id);
 
-        // ⭐ 位置はこっちに移す（超重要）
-        link.style.position = 'absolute';
-        link.style.left = item.x + '%';
-        link.style.top = item.y + '%';
-        link.style.transform = 'translate(-50%, -50%)';
+  items.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item.name;
 
-        const icon = document.createElement('img');
-        icon.src = getIcon(item.type);
-        icon.className = `icon ${item.type}`;
+    li.onclick = () => {
+      window.location.href = item.link;
+    };
 
-        icon.dataset.name = item.name;
-
-        link.appendChild(icon);
-        map.appendChild(link);
-    });
-});
-
-/* アイコン画像 */
-function getIcon(type) {
-    switch(type) {
-        case 'chest': return 'chest.png';
-        case 'shop': return 'shop.png';
-        case 'quest': return 'quest.png';
-        default: return 'icon.png';
-    }
+    list.appendChild(li);
+  });
 }
-
-/* 座標取得（そのままでOK） */
-const map = document.getElementById('map');
-
-map.addEventListener('click', function(e) {
-    const rect = map.getBoundingClientRect();
-
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-    console.log(`x: ${x.toFixed(2)}, y: ${y.toFixed(2)}`);
-});
