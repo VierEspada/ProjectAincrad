@@ -1,9 +1,9 @@
 {
   "towns": [
-    { "name": "Town of Beginnings", "link": "Tob.html" },
-    { "name": "Cliffside Plaza", "link": "CP.html" },
-    { "name": "Horunka", "link": "Horunka.html" },
-    { "name": "Tolbana", "link": "Tolbana.html" }
+    { "name": "Town of Beginnings", "link": "tob.html" },
+    { "name": "Cliffside Plaza", "link": "cp.html" },
+    { "name": "Horunka", "link": "horunka.html" },
+    { "name": "Tolbana", "link": "tolbana.html" }
   ],
   "regions": [
     { "name": "The Backroads", "link": "The Backroads.html" },
