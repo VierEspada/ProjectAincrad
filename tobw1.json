@@ -11,7 +11,8 @@
       "attack": "13-20",
       "type": "Slash",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Sword.html"
     },
     {
       "image": "Bronze Rapier.png",
@@ -20,7 +21,8 @@
       "attack": "13-21",
       "type": "Pierce",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Rapier.html"
     },
     {
       "image": "Bronze Dagger.png",
@@ -29,7 +31,8 @@
       "attack": "13-20",
       "type": "Pierce",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Dagger.html"
     },
     {
       "image": "Bronze Axe.png",
@@ -38,7 +41,8 @@
       "attack": "13-20",
       "type": "Slash",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Axe.html"
     },
     {
       "image": "Bronze Greatsword.png",
@@ -47,7 +51,8 @@
       "attack": "13-20",
       "type": "Slash",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Greatsword.html"
     },
     {
       "image": "Bronze Greataxe.png",
@@ -56,7 +61,8 @@
       "attack": "13-20",
       "type": "Slash",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Greataxe.html"
     },
     {
       "image": "Bronze Spear.png",
@@ -65,7 +71,8 @@
       "attack": "13-21",
       "type": "Pierce",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Spear.html"
     },
     {
       "image": "Bronze Mace.png",
@@ -74,7 +81,8 @@
       "attack": "10.4-16",
       "type": "Blunt",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Mace.html"
     },
     {
       "image": "Bronze Maul.png",
@@ -83,7 +91,8 @@
       "attack": "13-20",
       "type": "Blunt",
       "buy": 420,
-      "sell": 210
+      "sell": 210,
+      "link": "Bronze Maul.html"
     }
   ]
 }
