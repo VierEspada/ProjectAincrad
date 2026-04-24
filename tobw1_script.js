@@ -15,7 +15,7 @@ fetch("tobw1.json")
         div.classList.add("item");
 
         div.innerHTML = `
-            <img src="${item.image}">
+            <img src="${item.image}" alt="${item.name}">
             <div class="item-info">
                 <strong>${item.name}</strong>
                 <span>レベル: ${item.level}</span>
