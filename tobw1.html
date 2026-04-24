@@ -1,32 +1,74 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>Stella</title>
-    <link rel="stylesheet" href="shop.css">
-</head>
-<body>
-    <a href="tob.html" class="back-button">← 戻る</a>
-    
-<div class="container">
+fetch("tobw1.json")
+.then(response => {
+    if (!response.ok) {
+        throw new Error("JSONの読み込みに失敗しました");
+    }
+    return response.json();
+})
+.then(data => {
 
-    <!-- ショップ名 -->
-    <h1 id="shop-name"></h1>
+    const currency = "Col";
 
-    <!-- ショップ画像 -->
-    <img id="shop-image" class="shop-image">
+    // ===== ショップ情報 =====
+    document.getElementById("shop-name").textContent = data.name || "ショップ名不明";
+    document.getElementById("shop-description").textContent = data.description || "";
+    document.title = data.name || "Shop";
 
-    <!-- 商品一覧 -->
-    <div id="item-list" class="item-list"></div>
+    // ===== ショップ画像 =====
+    const shopImage = document.getElementById("shop-image");
+    if (data.image) {
+        shopImage.src = data.image;
+        shopImage.alt = data.name;
+    } else {
+        shopImage.style.display = "none";
+    }
 
-    <!-- ショップ詳細 -->
-    <div class="shop-detail">
-        <h2>ショップの詳細</h2>
-        <p id="shop-description"></p>
-    </div>
+    // ===== アイテム一覧 =====
+    const itemList = document.getElementById("item-list");
 
-</div>
+    if (!data.items || data.items.length === 0) {
+        itemList.innerHTML = "<p>商品がありません</p>";
+        return;
+    }
 
-<script src="tobw1_script.js"></script>
-</body>
-</html>
+    // 数字フォーマット
+    const format = num => {
+        return (typeof num === "number") ? num.toLocaleString() : num;
+    };
+
+    data.items.forEach(item => {
+
+        const div = document.createElement("div");
+        div.classList.add("item");
+
+        // ===== クリックでページ遷移 =====
+        if (item.link) {
+            div.addEventListener("click", () => {
+                window.location.href = item.link;
+            });
+        }
+
+        const attack = item.attack || "-";
+        const buy = item.buy ?? "-";
+        const sell = item.sell ?? "-";
+
+        div.innerHTML = `
+            <img src="${item.image || ""}" alt="${item.name || "item"}">
+            <div class="item-info">
+                <strong>${item.name || "名称不明"}</strong>
+                <span>レベル: ${item.level ?? "-"}</span>
+                <span>攻撃力: ${attack}</span>
+                <span>攻撃方法: ${item.type || "-"}</span>
+                <span class="buy">買値: ${format(buy)} ${currency}</span>
+                <span class="sell">売値: ${format(sell)} ${currency}</span>
+            </div>
+        `;
+
+        itemList.appendChild(div);
+    });
+
+})
+.catch(error => {
+    console.error(error);
+    document.getElementById("shop-name").textContent = "読み込みエラー";
+});
