@@ -9,35 +9,81 @@
       "name": "Bronze Sword",
       "level": 1,
       "attack": 13-20,
-      "type": "Slash"
+      "type": "Slash",
+      "buy": 420,
+      "sell": 210
     },
     {
       "image": "Bronze Rapier.png",
       "name": "Bronze Rapier",
       "level": 1,
       "attack": 13-21,
-      "type": "Pierce"
+      "type": "Pierce",
+      "buy": 420,
+      "sell": 210
     },
     {
       "image": "Bronze Dagger.png",
       "name": "Bronze Dagger",
       "level": 1,
       "attack": 13-20,
-      "type": "Pierce"
+      "type": "Pierce",
+      "buy": 420,
+      "sell": 210
     },
     {
       "image": "Bronze Axe.png",
       "name": "Bronze Axe",
       "level": 1,
       "attack": 13-20,
-      "type": "Slash"
+      "type": "Slash",
+      "buy": 420,
+      "sell": 210
     },
     {
-      "image": "Bronze Rapier.png",
-      "name": "Bronze Rapier",
+      "image": "Bronze Greatsword.png",
+      "name": "Bronze Greatsword",
+      "level": 1,
+      "attack": 13-20,
+      "type": "Slash",
+      "buy": 420,
+      "sell": 210
+    },
+    {
+      "image": "Bronze Greataxe.png",
+      "name": "Bronze Greataxe",
+      "level": 1,
+      "attack": 13-20,
+      "type": "Slash",
+      "buy": 420,
+      "sell": 210
+    },
+    {
+      "image": "Bronze Spear.png",
+      "name": "Bronze Spear",
       "level": 1,
       "attack": 13-21,
-      "type": "Pierce"
+      "type": "Pierce",
+      "buy": 420,
+      "sell": 210
+    },
+    {
+      "image": "Bronze Mace.png",
+      "name": "Bronze Mace",
+      "level": 1,
+      "attack": 10.4-16,
+      "type": "Blunt",
+      "buy": 420,
+      "sell": 210
+    },
+    {
+      "image": "Bronze Maul.png",
+      "name": "Bronze Maul",
+      "level": 1,
+      "attack": 13-20,
+      "type": "Blunt",
+      "buy": 420,
+      "sell": 210
     }
   ]
 }
