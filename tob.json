@@ -27,7 +27,8 @@
     { "name": "#3", "link": "tobc3.html" },
     { "name": "#4", "link": "tobc4.html" },
     { "name": "#5", "link": "tobc5.html" },
-    { "name": "#6", "link": "tobc6.html" }
+    { "name": "#6", "link": "tobc6.html" },
+    { "name": "#7", "link": "tobc7.html" }
   ],
   "inns": [
     { "name": "旅館", "link": "inn.html" }
