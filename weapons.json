@@ -1275,6 +1275,23 @@
     "image": "Blood Thorn.png"
   },
   {
+    "name": "Dark Dagger",
+    "requiredLevel":  5,
+    "attack": "32.5-50",
+    "buyPrice":  "Chest",
+    "sellValue":  111,
+    "type": "Pierce",
+    "category": "One Handed/Dagger",
+    "range": "Short-1.13m",
+    "weight": 4,
+    "strength": 0,
+    "agility": 0,
+    "unbreakable": true,
+    "tradeable": true,
+    "skin": "none",
+    "image": "Dark Dagger.png"
+  },
+  {
     "name": "Witch's Broom",
     "requiredLevel":  0,
     "attack": "0.38-0.53",
