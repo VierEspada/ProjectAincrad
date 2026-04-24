@@ -1,0 +1,43 @@
+{
+  "name": "Stella's Weapon Shop",
+  "image": "tobw1.png",
+  "description": "Bronze(1lv)の武器を売っている。",
+
+  "items": [
+    {
+      "image": "Bronze Sword.png",
+      "name": "Bronze Sword",
+      "level": 1,
+      "attack": 13-20,
+      "type": "Slash"
+    },
+    {
+      "image": "Bronze Rapier.png",
+      "name": "Bronze Rapier",
+      "level": 1,
+      "attack": 13-21,
+      "type": "Pierce"
+    },
+    {
+      "image": "Bronze Dagger.png",
+      "name": "Bronze Dagger",
+      "level": 1,
+      "attack": 13-20,
+      "type": "Pierce"
+    },
+    {
+      "image": "Bronze Axe.png",
+      "name": "Bronze Axe",
+      "level": 1,
+      "attack": 13-20,
+      "type": "Slash"
+    },
+    {
+      "image": "Bronze Rapier.png",
+      "name": "Bronze Rapier",
+      "level": 1,
+      "attack": 13-21,
+      "type": "Pierce"
+    }
+  ]
+}
