@@ -10,22 +10,26 @@ body {
     padding: 20px;
 }
 
+/* タイトル */
 h1 {
     text-align: center;
     border-bottom: 2px solid #00eaff;
     padding-bottom: 10px;
 }
 
+/* ショップ画像 */
 .shop-image {
     width: 100%;
     border: 2px solid #00eaff;
     margin: 20px 0;
 }
 
+/* アイテム一覧 */
 .item-list {
     margin-top: 20px;
 }
 
+/* カード */
 .item {
     display: flex;
     align-items: center;
@@ -33,23 +37,46 @@ h1 {
     margin-bottom: 10px;
     padding: 10px;
     background: rgba(0, 234, 255, 0.05);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
+/* ホバー（重要） */
+.item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #00eaff;
+}
+
+/* 画像 */
 .item img {
     width: 80px;
     margin-right: 15px;
 }
 
+/* テキスト */
 .item-info {
     display: flex;
     flex-direction: column;
 }
 
+/* 買値 */
+.buy {
+    color: #00ffcc;
+}
+
+/* 売値 */
+.sell {
+    color: #888;
+}
+
+/* 詳細 */
 .shop-detail {
     margin-top: 30px;
     border-top: 2px solid #00eaff;
     padding-top: 15px;
 }
+
+/* 戻るボタン */
 .back-button {
     display: inline-block;
     color: #00eaff;
