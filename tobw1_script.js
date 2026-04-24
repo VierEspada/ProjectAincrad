@@ -21,6 +21,8 @@ fetch("tobw1.json")
                 <span>レベル: ${item.level}</span>
                 <span>攻撃力: ${item.attack}</span>
                 <span>攻撃方法: ${item.type}</span>
+                <span>買値: ${item.buy}G</span>
+                <span>売値: ${item.sell}G</span>
             </div>
         `;
 
