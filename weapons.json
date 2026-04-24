@@ -1423,7 +1423,7 @@
     "strength": 0,
     "agility": 0,
     "unbreakable": true,
-    "tradeable": true,
+    "tradeable": false,
     "skin": "none",
     "image": "Dead Light.png"
   },
