@@ -7,6 +7,9 @@ fetch("tobw1.json")
 })
 .then(data => {
 
+    // ===== 通貨（固定）=====
+    const currency = "Col";
+
     // ===== ショップ情報 =====
     document.getElementById("shop-name").textContent = data.name || "ショップ名不明";
     document.getElementById("shop-description").textContent = data.description || "";
@@ -14,7 +17,7 @@ fetch("tobw1.json")
     // タイトル変更
     document.title = data.name || "Shop";
 
-    // 画像（なければ非表示）
+    // 画像処理
     const shopImage = document.getElementById("shop-image");
     if (data.image) {
         shopImage.src = data.image;
@@ -31,12 +34,16 @@ fetch("tobw1.json")
         return;
     }
 
+    // 数字フォーマット
+    const format = num => {
+        return (typeof num === "number") ? num.toLocaleString() : num;
+    };
+
     data.items.forEach(item => {
 
         const div = document.createElement("div");
         div.classList.add("item");
 
-        // 値の安全処理
         const attack = item.attack || "-";
         const buy = item.buy ?? "-";
         const sell = item.sell ?? "-";
@@ -48,8 +55,8 @@ fetch("tobw1.json")
                 <span>レベル: ${item.level ?? "-"}</span>
                 <span>攻撃力: ${attack}</span>
                 <span>攻撃方法: ${item.type || "-"}</span>
-                <span class="buy">買値: ${buy}Col</span>
-                <span class="sell">売値: ${sell}Col</span>
+                <span class="buy">買値: ${format(buy)} ${currency}</span>
+                <span class="sell">売値: ${format(sell)} ${currency}</span>
             </div>
         `;
 
