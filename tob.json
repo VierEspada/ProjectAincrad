@@ -1,23 +1,32 @@
 {
   "shops": [
-    { "name": "武器屋", "link": "shop1.html" }
+    { "name": "W1 Stella's Weapon Shop", "link": "tobw1.html" },
+    { "name": "W2 Atilla's Weapon Shop", "link": "tobw2.html" },
+    { "name": "W3 Alexis's Weapon Shop", "link": "tobw3.html" },
+    { "name": "W4 Cordina's Weapon Shop", "link": "tobw4.html" }
   ],
   "npcs": [
-    { "name": "NPC1", "link": "npc1.html" },
-    { "name": "NPC2", "link": "npc2.html" },
-    { "name": "NPC3", "link": "npc3.html" }
+    { "name": "i1 Minty's item Shop", "link": "tobi1.html" },
+    { "name": "i2 Luke's item Shop", "link": "tobi2.html" },
+    { "name": "i3 Amora's item Shop", "link": "tobi3.html" },
+    { "name": "i4 Kat's item Shop", "link": "tobi4.html" },
+    { "name": "i5 Kita's item Shop", "link": "tobi5.html" }
   ],
   "quests": [
-    { "name": "Green Herb Gathering", "link": "tobq1.html" },
-    { "name": "Ester's Herb Supply", "link": "tobq2.html" },
-    { "name": "Stella's Request", "link": "tobq3.html" },
-    { "name": "The Mysterious Flower", "link": "tobq4.html" },
-    { "name": "Being Neighborly", "link": "tobq5.html" },
-    { "name": "Depression's 2nd Wind?", "link": "tobq6.html" }
+    { "name": "Q1 Green Herb Gathering", "link": "tobq1.html" },
+    { "name": "Q2 Ester's Herb Supply", "link": "tobq2.html" },
+    { "name": "Q3 Stella's Request", "link": "tobq3.html" },
+    { "name": "Q4 The Mysterious Flower", "link": "tobq4.html" },
+    { "name": "Q5 Being Neighborly", "link": "tobq5.html" },
+    { "name": "Q6 Depression's 2nd Wind?", "link": "tobq6.html" }
   ],
   "chests": [
-    { "name": "宝箱1", "link": "chest1.html" },
-    { "name": "宝箱2", "link": "chest2.html" }
+    { "name": "#1", "link": "tobc1.html" },
+    { "name": "#2", "link": "tobc2.html" },
+    { "name": "#3", "link": "tobc3.html" },
+    { "name": "#4", "link": "tobc4.html" },
+    { "name": "#5", "link": "tobc5.html" },
+    { "name": "#6", "link": "tobc6.html" }
   ],
   "inns": [
     { "name": "旅館", "link": "inn.html" }
