@@ -48,8 +48,8 @@ fetch("tobw1.json")
                 <span>レベル: ${item.level ?? "-"}</span>
                 <span>攻撃力: ${attack}</span>
                 <span>攻撃方法: ${item.type || "-"}</span>
-                <span class="buy">買値: ${buy}G</span>
-                <span class="sell">売値: ${sell}G</span>
+                <span class="buy">買値: ${buy}Col</span>
+                <span class="sell">売値: ${sell}Col</span>
             </div>
         `;
 
