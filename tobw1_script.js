@@ -7,17 +7,14 @@ fetch("tobw1.json")
 })
 .then(data => {
 
-    // ===== 通貨（固定）=====
     const currency = "Col";
 
     // ===== ショップ情報 =====
     document.getElementById("shop-name").textContent = data.name || "ショップ名不明";
     document.getElementById("shop-description").textContent = data.description || "";
-
-    // タイトル変更
     document.title = data.name || "Shop";
 
-    // 画像処理
+    // ===== ショップ画像 =====
     const shopImage = document.getElementById("shop-image");
     if (data.image) {
         shopImage.src = data.image;
@@ -43,6 +40,13 @@ fetch("tobw1.json")
 
         const div = document.createElement("div");
         div.classList.add("item");
+
+        // ===== クリックでページ遷移 =====
+        if (item.link) {
+            div.addEventListener("click", () => {
+                window.location.href = item.link;
+            });
+        }
 
         const attack = item.attack || "-";
         const buy = item.buy ?? "-";
