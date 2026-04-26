@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frenzy Boar</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="monster.css">
-
-  <!-- フォント -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
@@ -27,13 +24,8 @@
     <div class="info-text">
 
       <p class="desc">
-        
+        狂暴化した猪型モンスター。突進攻撃が非常に危険で、接近戦では注意が必要。
       </p>
-
-      <!-- HPバー -->
-      <div class="hp-bar">
-        <div class="hp-fill" style="width:70%"></div>
-      </div>
 
       <!-- ステータス -->
       <div class="stats">
@@ -43,7 +35,8 @@
 
       <!-- ドロップ -->
       <div class="drop-text">
-        item Drop:<br>
+        item Drop:
+        <br>
         
       </div>
 
@@ -63,41 +56,45 @@
 
     <details>
       <summary>頭突き1</summary>
-      <p>プレイヤーが近づくと吹き飛ばす攻撃を行う。
-        <br>
-        後方へノックバックあり
-      </p>
-      <source src="frenzyboarATK1.mp4" type="video/mp4">
+      <p>プレイヤーが近づくと吹き飛ばす攻撃を行う。後方へノックバックあり。</p>
+
+      <video controls>
+        <source src="frenzyboarATK1.mp4" type="video/mp4">
+      </video>
     </details>
 
     <details>
       <summary>頭突き2</summary>
-      <p>プレイヤーが近づくと一歩下がって吹き飛ばす攻撃を行う。
-        <br>
-        上方へノックバックあり
-      </p>
-      <source src="frenzyboarATK2.mp4" type="video/mp4">
+      <p>一歩下がってから突進する攻撃。上方向へノックバックあり。</p>
+
+      <video controls>
+        <source src="frenzyboarATK2.mp4" type="video/mp4">
+      </video>
     </details>
 
     <details>
-      <summary>後退-突進</summary>
-      <p>プレイヤーから一度後ろへ下がって距離をとってその後振り向いて突進してくる。
-        <br>
-        後方へノックバックあり
-      </p>
-      <source src="frenzyboarATK3.mp4" type="video/mp4">
+      <summary>後退→突進</summary>
+      <p>一度距離を取り、振り向いてから突進する攻撃。</p>
+
+      <video controls>
+        <source src="frenzyboarATK3.mp4" type="video/mp4">
+      </video>
     </details>
 
     <details>
       <summary>突進</summary>
-      <p>プレイヤーが離れると突進してくる。
-        <br>
-        後方へノックバックあり
-      </p>
-      <source src="frenzyboarATK4.mp4" type="video/mp4">
+      <p>距離があると高速で突進してくる攻撃。</p>
+
+      <video controls>
+        <source src="frenzyboarATK4.mp4" type="video/mp4">
+      </video>
     </details>
 
+  </div>
 
+  <!-- 戻るボタン（追加・便利） -->
+  <div class="card back">
+    <a href="monstera.html">← モンスター 一覧へ戻る</a>
   </div>
 
 </div>
