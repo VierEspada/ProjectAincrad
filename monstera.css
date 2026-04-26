@@ -1,0 +1,151 @@
+/* =======================
+   ベース
+======================= */
+body {
+  margin: 0;
+  background: #05080f;
+  color: #e6faff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* =======================
+   タイトル
+======================= */
+.title {
+  text-align: center;
+  color: #00f0ff;
+  font-size: 30px;
+  margin: 20px 0;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* =======================
+   一覧ページ
+======================= */
+.monster-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .monster-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.monster-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #00eaff;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 10, 20, 0.7);
+  transition: 0.3s;
+}
+
+.monster-card img {
+  width: 100%;
+  display: block;
+}
+
+.monster-name {
+  text-align: center;
+  padding: 10px;
+  color: #00ffff;
+  font-size: 14px;
+}
+
+.monster-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+/* =======================
+   詳細ページ用（共通）
+======================= */
+.card {
+  background: rgba(0, 10, 20, 0.7);
+  border: 1px solid #00eaff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  backdrop-filter: blur(6px);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .info {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .info img {
+    width: 40%;
+  }
+}
+
+.info-text {
+  flex: 1;
+}
+
+.hp-bar {
+  background: #111;
+  border: 1px solid #00ffff;
+  height: 12px;
+  margin: 10px 0;
+}
+
+.hp-fill {
+  background: linear-gradient(90deg, #00ffff, #0077ff);
+  height: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop-text {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #00eaff;
+  border-radius: 6px;
+  color: #00ffff;
+  font-size: 14px;
+}
+
+/* 動画 */
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: black;
+}
+
+/* 戦闘 */
+details {
+  margin-top: 10px;
+  border-top: 1px solid #00eaff;
+  padding-top: 10px;
+}
+
+summary {
+  cursor: pointer;
+  color: #00ffff;
+}
