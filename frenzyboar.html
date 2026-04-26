@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frenzy Boar</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="monster.css">
+
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- ヘッダー -->
+  <h1 class="title">Frenzy Boar</h1>
+
+  <!-- 基本情報 -->
+  <div class="card info">
+
+    <img src="frenzyboar.png" alt="Frenzy Boar">
+
+    <div class="info-text">
+
+      <p class="desc">
+        
+      </p>
+
+      <!-- HPバー -->
+      <div class="hp-bar">
+        <div class="hp-fill" style="width:70%"></div>
+      </div>
+
+      <!-- ステータス -->
+      <div class="stats">
+        <div>EXP: 50</div>
+        <div>Col: 20</div>
+      </div>
+
+      <!-- ドロップ -->
+      <div class="drop-text">
+        item Drop:<br>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 出現場所 -->
+  <div class="card map">
+    <h2>主な出現場所</h2>
+    <p>MAP</p>
+    <img src="frenzyboarM1.png" alt="Map">
+  </div>
+
+  <!-- 戦闘情報 -->
+  <div class="card battle">
+    <h2>攻撃方法</h2>
+
+    <details>
+      <summary>頭突き1</summary>
+      <p>プレイヤーが近づくと吹き飛ばす攻撃を行う。
+        <br>
+        後方へノックバックあり
+      </p>
+      <source src="frenzyboarATK1.mp4" type="video/mp4">
+    </details>
+
+    <details>
+      <summary>頭突き2</summary>
+      <p>プレイヤーが近づくと一歩下がって吹き飛ばす攻撃を行う。
+        <br>
+        上方へノックバックあり
+      </p>
+      <source src="frenzyboarATK2.mp4" type="video/mp4">
+    </details>
+
+    <details>
+      <summary>後退-突進</summary>
+      <p>プレイヤーから一度後ろへ下がって距離をとってその後振り向いて突進してくる。
+        <br>
+        後方へノックバックあり
+      </p>
+      <source src="frenzyboarATK3.mp4" type="video/mp4">
+    </details>
+
+    <details>
+      <summary>突進</summary>
+      <p>プレイヤーが離れると突進してくる。
+        <br>
+        後方へノックバックあり
+      </p>
+      <source src="frenzyboarATK4.mp4" type="video/mp4">
+    </details>
+
+
+  </div>
+
+</div>
+
+</body>
+</html>
