@@ -8,7 +8,6 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-/* コンテナ */
 .container {
   max-width: 900px;
   margin: auto;
@@ -56,7 +55,6 @@ body {
   border-radius: 10px;
 }
 
-/* PC表示 */
 @media (min-width: 768px) {
   .info {
     flex-direction: row;
@@ -75,7 +73,6 @@ body {
 .desc {
   margin-bottom: 10px;
 }
-
 
 /* =======================
    ステータス
@@ -109,19 +106,13 @@ img {
 }
 
 /* =======================
-   動画（MP4用）
+   動画
 ======================= */
 video {
   width: 100%;
   border-radius: 10px;
   margin-top: 10px;
   background: black;
-  outline: none;
-}
-
-/* スマホでの操作性改善 */
-video::-webkit-media-controls {
-  filter: brightness(1.1);
 }
 
 /* =======================
@@ -137,18 +128,19 @@ summary {
   cursor: pointer;
   color: #00ffff;
   font-weight: bold;
-  transition: 0.2s;
-}
-
-summary:hover {
-  text-shadow: 0 0 5px #00ffff;
 }
 
 /* =======================
-   スマホ最適化
+   戻るボタン
 ======================= */
-@media (max-width: 480px) {
-  .title {
-    font-size: 24px;
-  }
+.back a {
+  color: #00ffff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.back a:hover {
+  text-shadow: 0 0 8px #00ffff;
 }
