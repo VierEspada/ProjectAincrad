@@ -149,3 +149,9 @@ summary {
   cursor: pointer;
   color: #00ffff;
 }
+
+a:link,
+a:visited,
+a:active {
+  color: #00ffff;
+}
