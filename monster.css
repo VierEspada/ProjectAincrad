@@ -1,0 +1,170 @@
+/* =======================
+   ベース
+======================= */
+body {
+  margin: 0;
+  background: #05080f;
+  color: #e6faff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* コンテナ */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* =======================
+   タイトル
+======================= */
+.title {
+  text-align: center;
+  color: #00f0ff;
+  font-size: 30px;
+  margin: 20px 0;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* =======================
+   カード
+======================= */
+.card {
+  background: rgba(0, 10, 20, 0.7);
+  border: 1px solid #00eaff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+/* =======================
+   基本情報
+======================= */
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* PC表示 */
+@media (min-width: 768px) {
+  .info {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .info img {
+    width: 40%;
+  }
+}
+
+.info-text {
+  flex: 1;
+}
+
+.desc {
+  margin-bottom: 10px;
+}
+
+/* =======================
+   HPバー
+======================= */
+.hp-bar {
+  background: #111;
+  border: 1px solid #00ffff;
+  height: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hp-fill {
+  background: linear-gradient(90deg, #00ffff, #0077ff);
+  height: 100%;
+}
+
+/* =======================
+   ステータス
+======================= */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* =======================
+   ドロップ
+======================= */
+.drop-text {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #00eaff;
+  border-radius: 6px;
+  color: #00ffff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =======================
+   画像
+======================= */
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* =======================
+   動画（MP4用）
+======================= */
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: black;
+  outline: none;
+}
+
+/* スマホでの操作性改善 */
+video::-webkit-media-controls {
+  filter: brightness(1.1);
+}
+
+/* =======================
+   戦闘
+======================= */
+details {
+  margin-top: 10px;
+  border-top: 1px solid #00eaff;
+  padding-top: 10px;
+}
+
+summary {
+  cursor: pointer;
+  color: #00ffff;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+summary:hover {
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* =======================
+   スマホ最適化
+======================= */
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+}
