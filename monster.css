@@ -144,3 +144,11 @@ summary {
 .back a:hover {
   text-shadow: 0 0 8px #00ffff;
 }
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
