@@ -1,3 +1,4 @@
+/* ===== ベース ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,10 +6,30 @@ body {
   background: linear-gradient(to bottom, #0a0f1c, #101a2e);
 }
 
-/* レイアウト */
+/* ===== 戻るボタン ===== */
+.top-bar {
+  padding: 15px 30px;
+}
+
+.back-btn {
+  color: #00eaff;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid #00eaff;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  background-color: #00eaff;
+  color: #000;
+}
+
+/* ===== レイアウト ===== */
 .container {
   display: flex;
   padding: 20px;
+  gap: 20px;
 }
 
 /* 左画像 */
@@ -17,11 +38,13 @@ body {
   text-align: center;
 }
 
+/* アイテム画像 */
 .item-img {
   max-width: 80%;
   border: 2px solid #00eaff;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,234,255,0.3);
 }
 
 /* 右側 */
@@ -32,12 +55,14 @@ body {
 .item-name {
   font-size: 32px;
   color: #00eaff;
+  text-shadow: 0 0 6px rgba(0,234,255,0.4);
 }
 
 /* テーブル */
 .item-table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
 .item-table td {
@@ -45,7 +70,7 @@ body {
   padding: 8px;
 }
 
-/* 説明 */
+/* ===== 説明 ===== */
 .description {
   padding: 20px;
   border-top: 1px solid #00eaff;
@@ -62,44 +87,33 @@ a:hover,
 a:active {
   color: #00eaff;
 }
-.top-bar {
-  padding: 15px;
-}
 
-.back-btn {
-  color: #00eaff;
-  text-decoration: none;
-  font-size: 18px;
-  border: 1px solid #00eaff;
-  padding: 8px 12px;
-  border-radius: 5px;
-}
-
-.back-btn:hover {
-  background-color: #00eaff;
-  color: #000;
-}
+/* ===== マップUI ===== */
 .map-panel {
   margin-top: 30px;
   padding: 15px;
-  border: 1px solid rgba(0, 255, 200, 0.6);
+  border: 1px solid rgba(0, 234, 255, 0.6);
   background: rgba(0, 20, 30, 0.6);
-  box-shadow: 0 0 15px rgba(0,255,200,0.2);
+  box-shadow: 0 0 15px rgba(0,234,255,0.2);
 }
 
 .map-panel h2 {
-  color: #00ffcc;
-  text-shadow: 0 0 8px #00ffcc;
+  color: #00eaff;
+  text-shadow: 0 0 8px rgba(0,234,255,0.5);
   letter-spacing: 2px;
 }
 
+/* マップ画像（重要修正済み） */
 .map-img {
   width: 100%;
   max-height: 350px;
+  height: auto;
+
   object-fit: contain;
 
-  border: 1px solid rgba(0,255,200,0.4);
-  box-shadow: 0 0 10px rgba(0,255,200,0.2);
+  border: 1px solid rgba(0,234,255,0.4);
+  box-shadow: 0 0 10px rgba(0,234,255,0.2);
 
-  filter: brightness(1.05) contrast(1.05);
+  /* 色崩れ防止 */
+  filter: none;
 }
