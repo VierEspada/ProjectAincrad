@@ -82,7 +82,7 @@
   },
   {
     "name": "Red Rose",
-    "page": "Red ROse.html",
+    "page": "Red Rose.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -171,7 +171,7 @@
     "image": "Wasp Plush.png"
   },
   {
-    "name": " Wolf Plush",
+    "name": "Wolf Plush",
     "page": "Wolf Plush.html",
     "buyPrice": 100,
     "sellValue": 50,
