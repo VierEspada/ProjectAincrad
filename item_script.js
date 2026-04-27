@@ -22,12 +22,9 @@ function displayItems(list) {
       <h3>${item.name}</h3>
     `;
 
-    // 👇 ここが変更ポイント（別HTMLへ遷移）
     card.addEventListener("click", () => {
       if (item.page) {
         window.location.href = item.page;
-      } else {
-        console.warn(`${item.name} に page が設定されていません`);
       }
     });
 
@@ -35,18 +32,22 @@ function displayItems(list) {
   });
 }
 
-// 検索（名前のみ）
-document.getElementById("search").addEventListener("input", e => {
-  const value = e.target.value.toLowerCase();
+// 検索（ここが重要）
+const search = document.getElementById("search");
 
-  const filtered = items.filter(i =>
-    (i.name || "").toLowerCase().includes(value)
-  );
+if (search) {
+  search.addEventListener("input", e => {
+    const value = e.target.value.toLowerCase();
 
-  displayItems(filtered);
-});
+    const filtered = items.filter(i =>
+      (i.name || "").toLowerCase().includes(value)
+    );
 
-// ホームへ
+    displayItems(filtered);
+  });
+}
+
+// ホーム
 function goHome() {
   window.location.href = "index.html";
 }
