@@ -79,3 +79,23 @@ a:active {
   background-color: #00eaff;
   color: #000;
 }
+.map-panel {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid rgba(0, 255, 200, 0.6);
+  background: rgba(0, 20, 30, 0.6);
+  box-shadow: 0 0 15px rgba(0,255,200,0.2);
+}
+
+.map-panel h2 {
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc;
+  letter-spacing: 2px;
+}
+
+/* ホログラム風マップ */
+#map {
+  height: 350px;
+  border: 1px solid rgba(0,255,200,0.4);
+  filter: hue-rotate(140deg) brightness(1.2) contrast(1.3);
+}
