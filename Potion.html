@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アイテム詳細</title>
+  <link rel="stylesheet" href="items.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- 左：画像（自動差し替え） -->
+    <div class="left">
+      <img src="Potion.png"
+           alt="アイテム画像"
+           class="item-img"
+           onerror="this.onerror=null;this.src='no-image.png';">
+    </div>
+
+    <!-- 右：詳細 -->
+    <div class="right">
+      <h1 class="item-name">Potion</h1>
+
+      <table class="item-table">
+        <tr><td>買値</td><td>50 Col</td></tr>
+        <tr><td>売値</td><td>25 Col</td></tr>
+        <tr><td>スタック数</td><td>64</td></tr>
+        <tr><td>トレード可能</td><td>可能</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- 説明 -->
+  <div class="description">
+    <h2>詳細</h2>
+    <p>
+      合計で体力を100回復する。
+      <br>
+      一秒間に10ずつ回復してそれが10秒続く。
+      <br>
+      入手方法
+      <br>
+      ショップ
+      <br>
+      宝箱
+      <br>
+      モンスタードロップ
+      <br>
+    </p>
+  </div>
+
+</body>
+</html>
