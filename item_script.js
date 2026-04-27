@@ -1,41 +1,50 @@
 let items = [];
 
-// URLから name を取得
-const params = new URLSearchParams(window.location.search);
-const itemName = decodeURIComponent(params.get("name") || "");
-
 // データ取得
 fetch("item.json")
   .then(res => res.json())
   .then(data => {
     items = data;
-    showDetail();
+    displayItems(items);
   });
 
-function showDetail() {
-  const container = document.getElementById("detail");
+// 一覧表示
+function displayItems(list) {
+  const container = document.getElementById("item-list");
+  container.innerHTML = "";
 
-  // 完全一致じゃなくトリムして比較（バグ防止）
-  const item = items.find(i => (i.name || "").trim() === itemName.trim());
+  list.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "card";
 
-  if (!item) {
-    container.innerHTML = "<p>アイテムが見つかりません</p>";
-    return;
-  }
-
-  const bool = v => v ? "Yes" : "No";
-
-  container.innerHTML = `
-    <div class="detail-box">
+    card.innerHTML = `
       <img src="${item.image}" onerror="this.style.display='none'">
-      <h2>${item.name}</h2>
-      <p><strong>Buy Price:</strong> ${item.buyPrice}</p>
-      <p><strong>Sell Value:</strong> ${item.sellValue}</p>
-      <p><strong>Stack:</strong> ${item.stack}</p>
-      <p><strong>Tradeable:</strong> ${bool(item.tradeable)}</p>
-    </div>
-  `;
+      <h3>${item.name}</h3>
+    `;
+
+    // 👇 ここが変更ポイント（別HTMLへ遷移）
+    card.addEventListener("click", () => {
+      if (item.page) {
+        window.location.href = item.page;
+      } else {
+        console.warn(`${item.name} に page が設定されていません`);
+      }
+    });
+
+    container.appendChild(card);
+  });
 }
+
+// 検索（名前のみ）
+document.getElementById("search").addEventListener("input", e => {
+  const value = e.target.value.toLowerCase();
+
+  const filtered = items.filter(i =>
+    (i.name || "").toLowerCase().includes(value)
+  );
+
+  displayItems(filtered);
+});
 
 // ホームへ
 function goHome() {
