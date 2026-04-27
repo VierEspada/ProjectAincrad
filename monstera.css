@@ -155,3 +155,34 @@ a:visited,
 a:active {
   color: #00ffff;
 }
+
+/* 左上のGitHubロゴをSAO風ボタンに */
+header a[href="/"] {
+  position: relative;
+  padding: 6px 14px;
+  margin-left: 10px;
+  border: 1px solid #00ffe0;
+  border-radius: 6px;
+  background: rgba(0, 255, 224, 0.05);
+  color: #00ffe0 !important;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+/* ネオン発光 */
+header a[href="/"]:hover {
+  background: rgba(0, 255, 224, 0.15);
+  box-shadow:
+    0 0 6px #00ffe0,
+    0 0 12px #00ffe0,
+    inset 0 0 6px #00ffe0;
+  transform: scale(1.05);
+}
+
+/* 「HOME」ラベルを追加 */
+header a[href="/"]::after {
+  content: " HOME";
+  font-size: 12px;
+}
