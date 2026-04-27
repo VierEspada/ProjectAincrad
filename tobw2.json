@@ -1,7 +1,7 @@
 {
-  "name": "Stella's Weapon Shop",
-  "image": "tobw1.png",
-  "description": "Bronze(1lv)の武器を売っている。",
+  "name": "Atilla's Weapon Shop",
+  "image": "tobw2.png",
+  "description": "2lv,5lv,8lvの武器が売っている。",
 
   "items": [
     {
