@@ -1,41 +1,31 @@
 let items = [];
 
+// URLから name を取得
+const params = new URLSearchParams(window.location.search);
+const itemName = decodeURIComponent(params.get("name") || "");
+
 // データ取得
 fetch("item.json")
   .then(res => res.json())
   .then(data => {
     items = data;
-    displayItems(items);
+    showDetail();
   });
 
-// 一覧表示
-function displayItems(list) {
-  const container = document.getElementById("item-list");
-  container.innerHTML = "";
+function showDetail() {
+  const container = document.getElementById("detail");
 
-  list.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "card";
+  // 完全一致じゃなくトリムして比較（バグ防止）
+  const item = items.find(i => (i.name || "").trim() === itemName.trim());
 
-    card.innerHTML = `
-      <img src="${item.image}" onerror="this.style.display='none'">
-      <h3>${item.name}</h3>
-    `;
-
-    card.addEventListener("click", () => showDetail(item));
-
-    container.appendChild(card);
-  });
-}
-
-// 詳細表示
-function showDetail(item) {
-  const modal = document.getElementById("modal");
-  const content = document.getElementById("modal-content");
+  if (!item) {
+    container.innerHTML = "<p>アイテムが見つかりません</p>";
+    return;
+  }
 
   const bool = v => v ? "Yes" : "No";
 
-  content.innerHTML = `
+  container.innerHTML = `
     <div class="detail-box">
       <img src="${item.image}" onerror="this.style.display='none'">
       <h2>${item.name}</h2>
@@ -45,21 +35,7 @@ function showDetail(item) {
       <p><strong>Tradeable:</strong> ${bool(item.tradeable)}</p>
     </div>
   `;
-
-  modal.classList.remove("hidden");
-  modal.onclick = () => modal.classList.add("hidden");
 }
-
-// 検索（名前のみ）
-document.getElementById("search").addEventListener("input", e => {
-  const value = e.target.value.toLowerCase();
-
-  const filtered = items.filter(i =>
-    (i.name || "").toLowerCase().includes(value)
-  );
-
-  displayItems(filtered);
-});
 
 // ホームへ
 function goHome() {
