@@ -1,6 +1,7 @@
 [
   {
     "name": "Potion",
+    "page": "Potion.html",
     "buyPrice": 50,
     "sellValue": 25,
     "stack": 64,
@@ -9,6 +10,7 @@
   },
   {
     "name": "Healing Crystal",
+    "page": "Healing Crystal.html",
     "buyPrice": 2100,
     "sellValue": 1050,
     "stack": 64,
@@ -17,6 +19,7 @@
   },
   {
     "name": "Teleport Crystal",
+    "page": "Teleport Crystal.html",
     "buyPrice": 500,
     "sellValue": 250,
     "stack": 64,
@@ -25,6 +28,7 @@
   },
   {
     "name": "Curing Crystal",
+    "page": "Curing Crystal.html",
     "buyPrice": 850,
     "sellValue": 425,
     "stack": 64,
@@ -33,6 +37,7 @@
   },
   {
     "name": "Hand Mirror",
+    "page": "Hand Mirror.html",
     "buyPrice": 250,
     "sellValue": 125,
     "stack": 3,
@@ -41,6 +46,7 @@
   },
   {
     "name": "Green Herb",
+    "page": "Green Herb.html",
     "buyPrice": "採取",
     "sellValue": 5,
     "stack": 64,
@@ -49,6 +55,7 @@
   },
   {
     "name": "Pink Herb",
+    "page": "Pink Herb.html",
     "buyPrice": "採取",
     "sellValue": 5,
     "stack": 64,
@@ -57,6 +64,7 @@
   },
   {
     "name": "Red Herb",
+    "page": "Red Herb.html",
     "buyPrice": "採取",
     "sellValue": 5,
     "stack": 64,
@@ -65,6 +73,7 @@
   },
   {
     "name": "Lunar Tear",
+    "page": "Lunar Tear.html",
     "buyPrice": "購入不可",
     "sellValue": "売却不可",
     "stack": 64,
@@ -73,6 +82,7 @@
   },
   {
     "name": "Red Rose",
+    "page": "Red ROse.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -81,6 +91,7 @@
   },
   {
     "name": "White Rose",
+    "page": "White Rose.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -89,6 +100,7 @@
   },
   {
     "name": "Yellow Rose",
+    "page": "Yellow Rose.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -97,6 +109,7 @@
   },
   {
     "name": "Orange Rose",
+    "page": "Orange Rose.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -105,6 +118,7 @@
   },
   {
     "name": "Pink Rose",
+    "page": "Pink Rose.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -113,6 +127,7 @@
   },
   {
     "name": "Valentine's Bouquet",
+    "page": "Valentine's Bouquet.html",
     "buyPrice": 1200,
     "sellValue": 600,
     "stack": 64,
@@ -121,6 +136,7 @@
   },
   {
     "name": "Scuttle Crab Plush",
+    "page": "Scuttle Crab.html",
     "buyPrice": 150,
     "sellValue": 75,
     "stack": 64,
@@ -129,6 +145,7 @@
   },
   {
     "name": "Boar Plush",
+    "page": "Boar Plush.html",
     "buyPrice": 100,
     "sellValue": 50,
     "stack": 64,
@@ -137,6 +154,7 @@
   },
   {
     "name": "Nepenthes Plush",
+    "page": "Nepenthes.html",
     "buyPrice": 100,
     "sellValue": 50,
     "stack": 64,
@@ -145,6 +163,7 @@
   },
   {
     "name": "Wasp Plush",
+    "page": "Wasp Plush.html",
     "buyPrice": 100,
     "sellValue": 50,
     "stack": 64,
@@ -153,6 +172,7 @@
   },
   {
     "name": " Wolf Plush",
+    "page": "Wolf Plush.html",
     "buyPrice": 100,
     "sellValue": 50,
     "stack": 64,
@@ -161,6 +181,7 @@
   },
   {
     "name": "Rat Plush",
+    "page": "Rat Plush.html",
     "buyPrice": 300,
     "sellValue": 150,
     "stack": 64,
@@ -169,6 +190,7 @@
   },
   {
     "name": "Baby Bell",
+    "page": "Baby Bell.html",
     "buyPrice": 100,
     "sellValue": 50,
     "stack": 64,
@@ -177,6 +199,7 @@
   },
   {
     "name": "Lantern",
+    "page": "Lantern.html",
     "buyPrice": 2500,
     "sellValue": 1250,
     "stack": 1,
@@ -185,6 +208,7 @@
   },
   {
     "name": "Yummy Pumpkin",
+    "page": "Yummy Pumpkin.html",
     "buyPrice": 250,
     "sellValue": 125,
     "stack": 64,
@@ -193,6 +217,7 @@
   },
   {
     "name": "Bread Bun",
+    "page": "Bread Bun.html",
     "buyPrice": 12,
     "sellValue": 6,
     "stack": 64,
@@ -201,6 +226,7 @@
   },
   {
     "name": "Bread Rall",
+    "page": "Bread Rall.html",
     "buyPrice": 12,
     "sellValue": 6,
     "stack": 64,
@@ -209,6 +235,7 @@
   },
   {
     "name": "Bread Loaf",
+    "page": "Bread Loaf.html",
     "buyPrice": 12,
     "sellValue": 6,
     "stack": 64,
@@ -217,6 +244,7 @@
   },
   {
     "name": "Mug of Ale",
+    "page": "Mug of Ale.html",
     "buyPrice": 36,
     "sellValue": 18,
     "stack": 64,
@@ -225,6 +253,7 @@
   },
   {
     "name": "Chicken Skewer",
+    "page": "Chicken Skewer.html",
     "buyPrice": 12,
     "sellValue": 6,
     "stack": 64,
@@ -233,6 +262,7 @@
   },
   {
     "name": "Veggie Skewer",
+    "page": "Veggie Skewer.html",
     "buyPrice": 10,
     "sellValue": 5,
     "stack": 64,
@@ -241,6 +271,7 @@
   },
   {
     "name": "Iced Tea",
+    "page": "Iced Tea.html",
     "buyPrice": 8,
     "sellValue":4 ,
     "stack": 64,
@@ -249,6 +280,7 @@
   },
   {
     "name": "Cup of Tea",
+    "page": "Cup of Tea.html",
     "buyPrice": 1,
     "sellValue":0 ,
     "stack": 64,
@@ -257,6 +289,7 @@
   },
   {
     "name": "Beef Skewer",
+    "page": "Beef Skewer.html",
     "buyPrice": 12,
     "sellValue": 6,
     "stack": 64,
@@ -265,6 +298,7 @@
   },
   {
     "name": "Cheese",
+    "page": "Cheese.html",
     "buyPrice": 12,
     "sellValue": 6,
     "stack": 64,
@@ -273,6 +307,7 @@
   },
   {
     "name": "Whole Watermelon",
+    "page": "Whole Watermelon.html",
     "buyPrice": 30,
     "sellValue": 15,
     "stack": 64,
@@ -281,6 +316,7 @@
   },
   {
     "name": "Watermelon Slice",
+    "page": "Watermelon Slice.html",
     "buyPrice": 8,
     "sellValue": 4,
     "stack": 64,
@@ -289,6 +325,7 @@
   },
   {
     "name": "Sparkling Necklace",
+    "page": "Sparkling Necklace.html",
     "buyPrice": "Quest item",
     "sellValue": 150,
     "stack": 64,
@@ -297,6 +334,7 @@
   },
   {
     "name": "Broken Jewel",
+    "page": "Broken Jewel.html",
     "buyPrice": "Quest item",
     "sellValue": 120,
     "stack": 64,
@@ -305,6 +343,7 @@
   },
   {
     "name": "Metal Scraps",
+    "page": "Metal Scraps.html",
     "buyPrice": "Monster Drop",
     "sellValue": 50,
     "stack": 64,
@@ -313,6 +352,7 @@
   },
   {
     "name": "Love Potion",
+    "page": "Love Potion.html",
     "buyPrice": "Valentine Event item",
     "sellValue": 45,
     "stack": 64,
@@ -321,6 +361,7 @@
   },
   {
     "name": "Eggnog Potion",
+    "page": "Eggnog Potion.html",
     "buyPrice": "Christmas Event item",
     "sellValue": 25,
     "stack": 64,
@@ -329,6 +370,7 @@
   },
   {
     "name": "Padoru Kirito",
+    "page": "Padoru Kirito.html",
     "buyPrice": "Christmas Event item",
     "sellValue": 50,
     "stack": 64,
@@ -337,6 +379,7 @@
   },
   {
     "name": "Small Present",
+    "page": "Small Present.html",
     "buyPrice": "Christmas Event item",
     "sellValue": 0,
     "stack": 255,
@@ -345,6 +388,7 @@
   },
   {
     "name": "Medium Present",
+    "page": "Medium Present.html",
     "buyPrice": "Christmas Event item",
     "sellValue": 0,
     "stack": 255,
@@ -353,6 +397,7 @@
   },
   {
     "name": "Large Present",
+    "page": "Large Present.html",
     "buyPrice": "Christmas Event item",
     "sellValue": 0,
     "stack": 255,
