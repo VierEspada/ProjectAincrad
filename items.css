@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #e0f7ff;
+  background: linear-gradient(to bottom, #0a0f1c, #101a2e);
+}
+
+/* レイアウト */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* 左画像 */
+.left {
+  width: 40%;
+  text-align: center;
+}
+
+.item-img {
+  max-width: 80%;
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* 右側 */
+.right {
+  width: 60%;
+}
+
+.item-name {
+  font-size: 32px;
+  color: #00eaff;
+}
+
+/* テーブル */
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-table td {
+  border-bottom: 1px solid #00eaff;
+  padding: 8px;
+}
+
+/* 説明 */
+.description {
+  padding: 20px;
+  border-top: 1px solid #00eaff;
+}
+
+.description h2 {
+  color: #00eaff;
+}
+
+/* リンク */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #00eaff;
+}
