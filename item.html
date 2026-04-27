@@ -10,11 +10,15 @@
 
 <header>
   <h1>アイテム一覧</h1>
+
   <button onclick="goHome()">🏠ホーム</button>
+
+  <!-- 検索バー（これ必須） -->
+  <input type="text" id="search" placeholder="Search（Item Name）">
 </header>
 
 <main>
-  <div id="detail"></div>
+  <div id="item-list" class="grid"></div>
 </main>
 
 <script src="item_script.js"></script>
