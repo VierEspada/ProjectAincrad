@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アイテム詳細</title>
+  <link rel="stylesheet" href="items.css">
+</head>
+<body>
+<!-- 戻るボタン -->
+<div class="top-bar">
+  <a href="item.html" class="back-btn">← アイテム一覧へ</a>
+</div>
+  <div class="container">
+
+    <!-- 左：画像（自動差し替え） -->
+    <div class="left">
+      <img src="Love Potion.png"
+           alt="アイテム画像"
+           class="item-img"
+           onerror="this.onerror=null;this.src='no-image.png';">
+    </div>
+
+    <!-- 右：詳細 -->
+    <div class="right">
+      <h1 class="item-name">Love Potion</h1>
+
+      <table class="item-table">
+        <tr><td>買値</td><td> Valentine Event item </td></tr>
+        <tr><td>売値</td><td>45 Col</td></tr>
+        <tr><td>スタック数</td><td>64</td></tr>
+        <tr><td>トレード可能</td><td>可能</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- 説明 -->
+  <div class="description">
+    <h2>詳細</h2>
+    <p>
+      合計で体力を150回復する。
+      <br>
+      一秒間に10ずつ回復してそれが15秒続く。
+      <br>
+      一つにつき30秒のクールタイムがあり、２回使用したら３回目使用するのに１回目に使用してから30秒経たないと使用できない。
+      <br>
+      入手方法
+      <br>
+      ショップ
+      <br>
+      宝箱
+      <br>
+      モンスタードロップ
+      <br>
+      <a href="Ghost Boar.html" class="monster-link">Ghost Boar</a>(高確率)  
+    </p>
+  </div>
+
+</body>
+</html>
