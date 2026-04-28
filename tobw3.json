@@ -1,0 +1,88 @@
+{
+  "name": "Alexis's Weapon Shop",
+  "image": "tobw3.png",
+  "description": "2lv,8lvの武器を売っている。",
+
+  "items": [
+    {
+      "image": "Honor's Call.png",
+      "name": "Honor's Call",
+      "level": 2,
+      "attack": "22.09-34",
+      "type": "Slash",
+      "buy": 950,
+      "sell": 475,
+      "link": "Honor's Call.html"
+    },
+    {
+      "image": "Knight's Sword.png",
+      "name": "Knight's Sword",
+      "level": 2,
+      "attack": "22.09-34",
+      "type": "Slash",
+      "buy": 950,
+      "sell": 475,
+      "link": "Knight's Sword.html"
+    },
+    {
+      "image": "Sucker Punch.png",
+      "name": "Sucker Punch",
+      "level": 2,
+      "attack": "22.09-34",
+      "type": "Blunt",
+      "buy": 950,
+      "sell": 475,
+      "link": "Sucker Punch.html"
+    },
+    {
+      "image": "Iron Scythe.png",
+      "name": "Iron Scythe",
+      "level": 2,
+      "attack": "24.31-37.4",
+      "type": "Slash",
+      "buy": 970,
+      "sell": 485,
+      "link": "Iron Scythe.html"
+    },
+    {
+      "image": "Halberd.png",
+      "name": "Halberd",
+      "level": 2,
+      "attack": "22.09-34",
+      "type": "Slash",
+      "buy": 850,
+      "sell": 425,
+      "link": "Halberd.html"
+    },
+    {
+      "image": "Sharp Spear.png",
+      "name": "Sharp Spear",
+      "level": 2,
+      "attack": "22.09-35.69",
+      "type": "Pierce",
+      "buy": 950,
+      "sell": 475,
+      "link": "Sharp Spear.html"
+    },
+    {
+      "image": "Fancy Impaler.png",
+      "name": "Fancy Impaler",
+      "level": 8,
+      "attack": "40.94-66.14",
+      "type": "Slash",
+      "buy": 12000,
+      "sell": 6000,
+      "link": "Fancy Impaler.html"
+    },
+    {
+      "image": "Divine Blade",
+      "name": "Divine Blade",
+      "level": 8,
+      "attack": "41.76-64.26",
+      "type": "Pierce",
+      "buy": 14000,
+      "sell": 7000,
+      "link": "Divine Blade.html"
+    }
+  ]
+}
