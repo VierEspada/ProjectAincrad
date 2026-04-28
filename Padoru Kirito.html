@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アイテム詳細</title>
+  <link rel="stylesheet" href="items.css">
+</head>
+<body>
+<!-- 戻るボタン -->
+<div class="top-bar">
+  <a href="item.html" class="back-btn">← アイテム一覧へ</a>
+</div>
+  <div class="container">
+
+    <!-- 左：画像（自動差し替え） -->
+    <div class="left">
+      <img src="Padoru Kirito.png"
+           alt="アイテム画像"
+           class="item-img"
+           onerror="this.onerror=null;this.src='no-image.png';">
+    </div>
+
+    <!-- 右：詳細 -->
+    <div class="right">
+      <h1 class="item-name">Padoru Kirito</h1>
+
+      <table class="item-table">
+        <tr><td>買値</td><td> Christmas Event item </td></tr>
+        <tr><td>売値</td><td>50 Col</td></tr>
+        <tr><td>スタック数</td><td>64</td></tr>
+        <tr><td>トレード可能</td><td>可能</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- 説明 -->
+  <div class="description">
+    <h2>詳細</h2>
+    <p>
+     上に投げると使える花火。<br>
+      入手方法<br>
+      クリスマスイベントのショップか
+      <a href="Small Present.html" class="item-link">Small Present</a>,
+      <a href="Medium Present.html" class="item-link">Medium Present</a>,
+      <a href="Large Present.html" class="item-link">Large Present</a>
+      を開けてその中から手に入れる(確率)しかない。
+    </p>
+  </div>
+
+</body>
+</html>
