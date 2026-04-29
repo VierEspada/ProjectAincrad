@@ -1,0 +1,36 @@
+{
+  "name": "Minty's item Shop",
+  "image": "tobi1.png",
+  "description": "基本的な消耗品を売っている。",
+
+  "items": [
+    {
+      "image": "Potion.png",
+      "name": "Potion",
+      "buy": 50,
+      "sell": 25,
+      "link": "Potion.html"
+    },
+    {
+      "image": "Healing Crystal.png",
+      "name": "Healing Crystal",
+      "buy": 2100,
+      "sell": 1050,
+      "link": "Healing Crystal.html"
+    },
+    {
+      "image": "Teleport Crystal.png",
+      "name": "Teleport Crystal",
+      "buy": 500,
+      "sell": 250,
+      "link": "Teleport Crystal.html"
+    },
+    {
+      "image": "Curing Crystal.png",
+      "name": "Curing Crystal",
+      "buy": 850,
+      "sell": 425,
+      "link": "Curing Crystal.html"
+    }
+  ]
+}
