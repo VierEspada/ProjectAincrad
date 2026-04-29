@@ -1,0 +1,40 @@
+{
+  "name": "Luke's Shop",
+  "image": "tobi2.png",
+  "description": "武器とアイテムが売っている。",
+
+  "items": [
+    {
+      "category": "weapon",
+      "image": "Bronze Sword.png",
+      "name": "Bronze Sword",
+      "buy": 420,
+      "sell": 210,
+      "link": "Bronze Sword.html"
+    },
+    {
+      "category": "weapon",
+      "image": "Bronze Spear.png",
+      "name": "Bronze Spear",
+      "buy": 420,
+      "sell": 210,
+      "link": "Bronze Spear.html"
+    },
+    {
+      "category": "weapon",
+      "image": "Bronze Rapier.png",
+      "name": "Bronze Rapeir",
+      "buy": 420,
+      "sell": 210,
+      "link": "Bronze Rapier.html"
+    },
+    {
+      "category": "item",
+      "image": "Potion.png",
+      "name": "Potion",
+      "buy": 50,
+      "sell": 25,
+      "link": "Potion.html"
+    }
+  ]
+}
