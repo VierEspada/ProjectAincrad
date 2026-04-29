@@ -1,0 +1,22 @@
+{
+  "name": "Kat's item Shop",
+  "image": "tobi4.png",
+  "description": "食べ物が売っている。",
+
+  "items": [
+    {
+      "image": "Whole Watermelon.png",
+      "name": "Whole Watermelon",
+      "buy": 30,
+      "sell": 15,
+      "link": "Whole Watermelon.html"
+    },
+    {
+      "image": "Watermelon Slice.png",
+      "name": "Watermelon Slice",
+      "buy": 8,
+      "sell": 4,
+      "link": "Watermelon Slice.html"
+    }
+  ]
+}
