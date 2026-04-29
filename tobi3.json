@@ -1,0 +1,50 @@
+{
+  "name": "Minty's item Shop",
+  "image": "tobi1.png",
+  "description": "基本的な消耗品を売っている。",
+
+  "items": [
+    {
+      "image": "Red Rose.png",
+      "name": "Red Rose",
+      "buy": 300,
+      "sell": 150,
+      "link": "Red Rose.html"
+    },
+    {
+      "image": "White Rose.png",
+      "name": "White Rose",
+      "buy": 300,
+      "sell": 150,
+      "link": "White Rose.html"
+    },
+    {
+      "image": "Yellow Rose.png",
+      "name": "Yellow Rose",
+      "buy": 300,
+      "sell": 150,
+      "link": "Yellow Rose.html"
+    },
+    {
+      "image": "Orange Rose.png",
+      "name": "Orange Rose",
+      "buy": 300,
+      "sell": 150,
+      "link": "Orange Rose.html"
+    },
+    {
+      "image": "Pink Rose.png",
+      "name": "Pink Rose",
+      "buy": 300,
+      "sell": 150,
+      "link": "Pink Rose.html"
+    },
+    {
+      "image": "Valentine's bouquet.png",
+      "name": "Valentine's bouquet",
+      "buy": 1200,
+      "sell": 600,
+      "link": "Valentine's bouquet.html"
+    }
+  ]
+}
