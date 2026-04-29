@@ -1,0 +1,56 @@
+{
+  "name": "Luke's Shop",
+  "image": "tobi2.png",
+  "description": "武器とアイテムが売っている。",
+
+  "items": [
+    {
+      "category": "weapon",
+      "image": "Wooden Sword.png",
+      "name": "Wooden Sword",
+      "buy": 50,
+      "sell": 25,
+      "link": "Wooden Sword.html"
+    },
+    {
+      "category": "weapon",
+      "image": "Chopper.png",
+      "name": "Chopper",
+      "buy": 500,
+      "sell": 250,
+      "link": "Chopper.html"
+    },
+    {
+      "category": "weapon",
+      "image": "Cutting Response.png",
+      "name": "Cutting Response",
+      "buy": 950,
+      "sell": 475,
+      "link": "Cutting Response.html"
+    },
+    {
+      "category": "item",
+      "image": "Potion.png",
+      "name": "Potion",
+      "buy": 50,
+      "sell": 25,
+      "link": "Potion.html"
+    },
+    {
+      "category": "item",
+      "image": "Teleport Crystal.png",
+      "name": "Teleport Crystal",
+      "buy": 500,
+      "sell": 250,
+      "link": "Teleport Crystal.html"
+    },
+    {
+      "category": "item",
+      "image": "Hand Mirror.png",
+      "name": "Hand Mirror",
+      "buy": 250,
+      "sell": 125,
+      "link": "Hand Mirror.html"
+    }
+  ]
+}
