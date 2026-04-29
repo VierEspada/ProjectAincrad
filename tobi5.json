@@ -1,0 +1,29 @@
+{
+  "name": "Kat's item Shop",
+  "image": "tobi4.png",
+  "description": "食べ物が売っている。",
+
+  "items": [
+    {
+      "image": "Bread Bun.png",
+      "name": "Bread Bun",
+      "buy": 12,
+      "sell": 6,
+      "link": "Bread Bun.html"
+    },
+    {
+      "image": "Bread Rall.png",
+      "name": "Bread Rall",
+      "buy": 12,
+      "sell": 6,
+      "link": "Bread Rall.html"
+    },
+    {
+      "image": "Bread Loaf.png",
+      "name": "Bread Loaf",
+      "buy": 12,
+      "sell": 6,
+      "link": "Bread Loaf.html"
+    }
+  ]
+}
