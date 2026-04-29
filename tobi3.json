@@ -1,7 +1,7 @@
 {
-  "name": "Minty's item Shop",
-  "image": "tobi1.png",
-  "description": "基本的な消耗品を売っている。",
+  "name": "Amora's Flower Shop",
+  "image": "tobi3.png",
+  "description": "花を売っている。",
 
   "items": [
     {
