@@ -1,0 +1,78 @@
+{
+  "name": "Cordina's Weapon Shop",
+  "image": "tobw4.png",
+  "description": "2lv,5lv,8lvの武器が売っている。",
+
+  "items": [
+    {
+      "image": "Stacked Rapier.png",
+      "name": "Stacked Rapier",
+      "level": 2,
+      "attack": "22.09-35.69",
+      "type": "Pierce",
+      "buy": 950,
+      "sell": 450,
+      "link": "Stacked Rapier.html"
+    },
+    {
+      "image": "Ground Gorge.png",
+      "name": "Ground Gorge",
+      "level": 5,
+      "attack": "32.5-50",
+      "type": "Slash",
+      "buy": 2100,
+      "sell": 1050,
+      "link": "Ground Gorge.html"
+    },
+    {
+      "image": "Dragon Slayer.png",
+      "name": "Dragon Slayer",
+      "level": 8,
+      "attack": "40.94-63",
+      "type": "Slash",
+      "buy": 13000,
+      "sell": 6500,
+      "link": "Dragon Slayer.html"
+    },
+    {
+      "image": "Ritual Dagger.png",
+      "name": "Ritual Dagger",
+      "level": 8,
+      "attack": "40.94-63",
+      "type": "Pierce",
+      "buy": 8800,
+      "sell": 4400,
+      "link": "Ritual Dagger.html"
+    },
+    {
+      "image": "Linalia Hammer.png",
+      "name": "Linalia Hammer",
+      "level": 8,
+      "attack": "43.4-66.78",
+      "type": "Blunt",
+      "buy": 13000,
+      "sell": 6500,
+      "link": "Linalia Hammer.html"
+    },
+    {
+      "image": "Queens Knightsword.png",
+      "name": "Queens Knightsword",
+      "level": 8,
+      "attack": "40.94-63",
+      "type": "Slash",
+      "buy": 11000,
+      "sell": 5500,
+      "link": "Queens Knightsword.html"
+    },
+    {
+      "image": "Forged Rapier.png",
+      "name": "Forged Rapier",
+      "level": 8,
+      "attack": "40.94-66.14",
+      "type": "Pierce",
+      "buy": 12500,
+      "sell": 6250,
+      "link": "Forged Rapier.html"
+    }
+  ]
+}
