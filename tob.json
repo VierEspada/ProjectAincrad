@@ -13,6 +13,10 @@
     { "name": "i5 Kita's item Shop", "link": "tobi5.html" },
     { "name": "i6 Norbin's item Shop", "link": "tobi6.html" }
   ],
+  "zakka": [
+    { "name": "test", "link": ".html" },
+    
+  ],
   "quests": [
     { "name": "Q1 Green Herb Gathering", "link": "tobq1.html" },
     { "name": "Q2 Ester's Herb Supply", "link": "tobq2.html" },
