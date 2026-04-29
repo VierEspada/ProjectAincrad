@@ -48,16 +48,34 @@ ul {
   padding: 0;
 }
 
+/* ===== リスト ===== */
 li {
-  padding: 8px;
-  cursor: pointer;
   border-bottom: 1px solid rgba(0,255,255,0.2);
+}
+
+/* ===== リンク（重要）===== */
+li a {
+  display: block;
+  padding: 8px;
+  color: #00eaff;
+  text-decoration: none;
   transition: 0.2s;
 }
 
-li:hover {
+/* 訪問済みでも色を変えない */
+li a:visited {
+  color: #00eaff;
+}
+
+/* ホバー */
+li a:hover {
   background: rgba(0,255,255,0.1);
-  color: #fff;
+  color: #ffffff;
+}
+
+/* クリック中 */
+li a:active {
+  color: #ffffff;
 }
 
 /* 戻るボタン */
@@ -73,6 +91,11 @@ li:hover {
   z-index: 1000;
 }
 
+.home-btn:visited {
+  color: #00eaff;
+}
+
 .home-btn:hover {
   box-shadow: 0 0 10px #00eaff;
+  color: #ffffff;
 }
