@@ -3,6 +3,7 @@ fetch("tob.json")
   .then(data => {
     createList("shopList", data.shops);
     createList("npcList", data.npcs);
+    createList("zakkaList", data.zakka);
     createList("questList", data.quests);
     createList("chestList", data.chests);
     createList("innList", data.inns);
