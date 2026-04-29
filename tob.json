@@ -7,15 +7,13 @@
   ],
   "npcs": [
     { "name": "i1 Minty's item Shop", "link": "tobi1.html" },
-    { "name": "i2 Luke's item Shop", "link": "tobi2.html" },
     { "name": "i3 Amora's item Shop", "link": "tobi3.html" },
+  ],
+  "zakka": [
+    { "name": "i2 Luke's item Shop", "link": "tobi2.html" },
     { "name": "i4 Kat's item Shop", "link": "tobi4.html" },
     { "name": "i5 Kita's item Shop", "link": "tobi5.html" },
     { "name": "i6 Norbin's item Shop", "link": "tobi6.html" }
-  ],
-  "zakka": [
-    { "name": "test", "link": ".html" },
-    
   ],
   "quests": [
     { "name": "Q1 Green Herb Gathering", "link": "tobq1.html" },
