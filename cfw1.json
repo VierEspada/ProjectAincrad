@@ -1,0 +1,38 @@
+{
+  "name": "'s Weapon Shop",
+  "image": "cpw1.png",
+  "description": "8lv,10lvの武器を売っている。",
+
+  "items": [
+    {
+      "image": "Octoblade.png",
+      "name": "Octoblade",
+      "level": 8,
+      "attack": "40.94-63",
+      "type": "Slash",
+      "buy": 12000,
+      "sell": 6000,
+      "link": "Octoblade.html"
+    },
+    {
+      "image": "Vowed Edge.png",
+      "name": "Vowed Edge",
+      "level": 10,
+      "attack": "50.05-77",
+      "type": "Slash",
+      "buy": 25000,
+      "sell": 12500,
+      "link": "Vowed Edge.html"
+    },
+    {
+      "image": "Shatterskull.png",
+      "name": "Shatterskull",
+      "level": 10,
+      "attack": "45.5-70",
+      "type": "Blunt",
+      "buy": 24000,
+      "sell": 12000,
+      "link": "Shatterskull.html"
+    }
+  ]
+}
