@@ -1,8 +1,16 @@
+:root {
+  --main-color: #66d9ff;   /* メインの水色 */
+  --hover-color: #ffffff;  /* ホバー時 */
+  --bg-dark: #0a0f1a;
+  --bg-panel: rgba(10,20,40,0.95);
+  --border-glow: rgba(102,217,255,0.5);
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: #0a0f1a;
-  color: #00eaff;
+  background: var(--bg-dark);
+  color: var(--main-color);
 }
 
 .container {
@@ -28,15 +36,15 @@ body {
 /* サイド */
 .sidebar {
   flex: 1;
-  background: rgba(10,20,40,0.95);
-  border-left: 2px solid #00eaff;
+  background: var(--bg-panel);
+  border-left: 2px solid var(--main-color);
   padding: 15px;
   overflow-y: auto;
 }
 
 h2 {
   text-align: center;
-  border-bottom: 1px solid #00eaff;
+  border-bottom: 1px solid var(--main-color);
 }
 
 .section {
@@ -50,32 +58,32 @@ ul {
 
 /* ===== リスト ===== */
 li {
-  border-bottom: 1px solid rgba(0,255,255,0.2);
+  border-bottom: 1px solid rgba(102,217,255,0.2);
 }
 
-/* ===== リンク（重要）===== */
+/* ===== リンク ===== */
 li a {
   display: block;
   padding: 8px;
-  color: #00eaff;
+  color: var(--main-color);
   text-decoration: none;
   transition: 0.2s;
 }
 
-/* 訪問済みでも色を変えない */
+/* 訪問済みでも同じ色 */
 li a:visited {
-  color: #00eaff;
+  color: var(--main-color);
 }
 
 /* ホバー */
 li a:hover {
-  background: rgba(0,255,255,0.1);
-  color: #ffffff;
+  background: rgba(102,217,255,0.1);
+  color: var(--hover-color);
 }
 
-/* クリック中 */
+/* クリック時 */
 li a:active {
-  color: #ffffff;
+  color: var(--hover-color);
 }
 
 /* 戻るボタン */
@@ -85,17 +93,17 @@ li a:active {
   left: 15px;
   padding: 8px 14px;
   text-decoration: none;
-  color: #00eaff;
-  border: 1px solid #00eaff;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
   background: rgba(10,20,40,0.8);
   z-index: 1000;
 }
 
 .home-btn:visited {
-  color: #00eaff;
+  color: var(--main-color);
 }
 
 .home-btn:hover {
-  box-shadow: 0 0 10px #00eaff;
-  color: #ffffff;
+  box-shadow: 0 0 10px var(--border-glow);
+  color: var(--hover-color);
 }
