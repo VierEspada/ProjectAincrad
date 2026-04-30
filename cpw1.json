@@ -33,6 +33,36 @@
       "buy": 24000,
       "sell": 12000,
       "link": "Shatterskull.html"
+    },
+    {
+      "image": "War Hammer.png",
+      "name": "War Hammer",
+      "level": 10,
+      "attack": "50.05-77",
+      "type": "Blunt",
+      "buy": 26000,
+      "sell": 13000,
+      "link": "War Hammer.html"
+    },
+    {
+      "image": "Shadow Dagger.png",
+      "name": "Shadow Dagger",
+      "level": 10,
+      "attack": "45.5-70",
+      "type": "Slash",
+      "buy": 21000,
+      "sell": 10500,
+      "link": "Shadow Dagger.html"
+    },
+    {
+      "image": "Shaped Obsidian.png",
+      "name": "Shaped Obsidian",
+      "level": 10,
+      "attack": "50.05-77",
+      "type": "Slash",
+      "buy": 27000,
+      "sell": 13500,
+      "link": "Shaped Obsidian.html"
     }
   ]
 }
