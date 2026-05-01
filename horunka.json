@@ -1,0 +1,17 @@
+{
+  "shops": [
+    { "name": "Ari's Weapon Shop", "link": "cpw1.html" },
+    { "name": "The Keeper", "link": "cpw2.html" }
+  ],
+  "npcs": [
+    { "name": "Trella's Shop", "link": "cpi1.html" }
+  ],
+  "quests": [
+    { "name": "Q1 Collect The 3 Herbs", "link": "cpq1.html" },
+    { "name": "Q2 Boar Huntin' Time", "link": "cpq2.html" }
+  ],
+  "chests": [
+    { "name": "#1", "link": "chest1.html" },
+    { "name": "#2", "link": "chest2.html" }
+  ]
+}
