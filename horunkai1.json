@@ -1,0 +1,64 @@
+{
+  "name": "Trella's Shop",
+  "image": "horunkai1.png",
+  "description": "武器とアイテムが売っている。",
+
+  "items": [
+    {
+      "category": "weapon",
+      "image": "Excalibur Replica.png",
+      "name": "Excalibur Replica",
+      "buy": 8000,
+      "sell": 4000,
+      "link": "Excalibur Replica.html"
+    },
+    {
+      "category": "weapon",
+      "image": "Elucidator Replica.png",
+      "name": "Elucidator Replica",
+      "buy": 8000,
+      "sell": 4000,
+      "link": "Elucidator Replica.html"
+    },
+    {
+      "category": "weapon",
+      "image": "Lambent Light Replica.png",
+      "name": "Lambent Light Replica",
+      "buy": 8000,
+      "sell": 4000,
+      "link": "Lambent Light Replica.html"
+    },
+    {
+      "category": "item",
+      "image": "Potion.png",
+      "name": "Potion",
+      "buy": 50,
+      "sell": 25,
+      "link": "Potion.html"
+    },
+    {
+      "category": "item",
+      "image": "Healing Crystal.png",
+      "name": "Healing Crystal",
+      "buy": 2100,
+      "sell": 1050,
+      "link": "Healing Crystal.html"
+    },
+    {
+      "category": "item",
+      "image": "Teleport Crystal.png",
+      "name": "Teleport Crystal",
+      "buy": 500,
+      "sell": 250,
+      "link": "Teleport Crystal.html"
+    },
+    {
+      "category": "item",
+      "image": "Curing Crystal.png",
+      "name": "Curing Crystal",
+      "buy": 850,
+      "sell": 425,
+      "link": "Curing Crystal.html"
+    }
+  ]
+}
