@@ -11,8 +11,8 @@
     { "name": "i4 Kalil's Shop", "link": "horunkai4.html" }
   ],
   "quests": [
-    { "name": "Q1 Collect The 3 Herbs", "link": "horunkaq1.html" },
-    { "name": "Q2 Boar Huntin' Time", "link": "horunkaq2.html" }
+    { "name": "Q1 ", "link": "horunkaq1.html" },
+    { "name": "Q2 ", "link": "horunkaq2.html" }
   ],
   "chests": [
     { "name": "#1", "link": "chest1.html" }
