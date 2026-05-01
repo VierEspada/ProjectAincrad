@@ -16,5 +16,8 @@
   ],
   "chests": [
     { "name": "#1", "link": "chest1.html" }
+  ],
+  "ryokan": [
+    { "name": "旅館", "link": "inn1.html" }
   ]
 }
