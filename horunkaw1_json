@@ -1,0 +1,58 @@
+{
+  "name": "Ryuu's Weapon Shop",
+  "image": "cpw1.png",
+  "description": "5lvの武器を売っている。",
+
+  "items": [
+    {
+      "image": "Deadwood.png",
+      "name": "Deadwood",
+      "level": 5,
+      "attack": "32.5-50",
+      "type": "Blunt",
+      "buy": 1200,
+      "sell": 600,
+      "link": "Deadwood.html"
+    },
+    {
+      "image": "Unholy Blight.png",
+      "name": "Unholy Blight",
+      "level": 5,
+      "attack": "32.5-50",
+      "type": "Slash",
+      "buy": 1900,
+      "sell": 950,
+      "link": "Unholy Blight.html"
+    },
+    {
+      "image": "Chivalry Rapier.png",
+      "name": "Chivalry Rapier",
+      "level": 5,
+      "attack": "32.5-52.49",
+      "type": "Pierce",
+      "buy": 1800,
+      "sell": 900,
+      "link": "Chivalry Rapier.html"
+    },
+    {
+      "image": "Bloodlord Sculpter.png",
+      "name": "Bloodlord Sculpter",
+      "level": 5,
+      "attack": "32.5-50",
+      "type": "Slash",
+      "buy": 2500,
+      "sell": 1250,
+      "link": "Bloodlord Sculpter.html"
+    },
+    {
+      "image": "Caravan Spear.png",
+      "name": "Caravan Spear",
+      "level": 5,
+      "attack": "32.5-52.49",
+      "type": "Pierce",
+      "buy": 1950,
+      "sell": 975,
+      "link": "Caravan Spear.html"
+    }
+  ]
+}
