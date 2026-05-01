@@ -1,0 +1,26 @@
+{
+  "wshop": [
+    { "name": "W1 's Weapon Shop", "link": "tolbanaw1.html" },
+    { "name": "W2 's Weapon Shop", "link": "tolbanaw2.html" },
+    { "name": "W3 's Weapon Shop", "link": "tolbanaw3.html" },
+    { "name": "W4 's Weapon Shop", "link": "tolbanaw4.html" }
+  ],
+  "ishop": [
+    { "name": "i1 's Shop", "link": "tolbanai1.html" }
+  ],
+  "zakka": [
+    { "name": "i2 's Shop", "link": "tolbanai2.html" }
+  ],
+  "quests": [
+    { "name": "Q1 ", "link": "tolbanaq1.html" },
+    { "name": "Q2 ", "link": "tolbanaq2.html" }
+  ],
+  "chests": [
+    { "name": "#1", "link": "chest1.html" },
+    { "name": "#2", "link": "chest2.html" }
+  ],
+  "ryokan": [
+    { "name": "旅館1", "link": "inn1.html" },
+    { "name": "旅館2", "link": "inn2.html" }
+  ]
+}
