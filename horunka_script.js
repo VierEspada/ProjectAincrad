@@ -1,9 +1,9 @@
 fetch("horunka.json")
   .then(res => res.json())
   .then(data => {
-    createList("wshopList", data.shops);
-    createList("ishopList", data.npcs);
-    createList("zakkaList", data.npcs);
+    createList("wshopList", data.wshop);
+    createList("ishopList", data.ishop);
+    createList("zakkaList", data.zakka);
     createList("questList", data.quests);
     createList("chestList", data.chests);
   });
