@@ -1,17 +1,20 @@
 {
-  "shops": [
-    { "name": "Ari's Weapon Shop", "link": "cpw1.html" },
-    { "name": "The Keeper", "link": "cpw2.html" }
+  "wshop": [
+    { "name": "W1 Ryuu's Weapon Shop", "link": "horunkaw1.html" }
   ],
-  "npcs": [
-    { "name": "Trella's Shop", "link": "cpi1.html" }
+  "ishop": [
+    { "name": "i1 Trella's Shop", "link": "horunkai1.html" },
+    { "name": "i2 Ron's Shop", "link": "horunkai2.html" }
+  ],
+  "zakka": [
+    { "name": "i3 Evie's Shop", "link": "horunkai3.html" },
+    { "name": "i4 Kalil's Shop", "link": "horunkai4.html" }
   ],
   "quests": [
-    { "name": "Q1 Collect The 3 Herbs", "link": "cpq1.html" },
-    { "name": "Q2 Boar Huntin' Time", "link": "cpq2.html" }
+    { "name": "Q1 Collect The 3 Herbs", "link": "horunkaq1.html" },
+    { "name": "Q2 Boar Huntin' Time", "link": "horunkaq2.html" }
   ],
   "chests": [
-    { "name": "#1", "link": "chest1.html" },
-    { "name": "#2", "link": "chest2.html" }
+    { "name": "#1", "link": "chest1.html" }
   ]
 }
