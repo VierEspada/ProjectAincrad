@@ -7,9 +7,23 @@
     {
       "image": "Scuttle Crab Plush.png",
       "name": "Scuttle Crab Plush",
-      "buy": 300,
-      "sell": 150,
+      "buy": 150,
+      "sell": 75,
       "link": "Scuttle Crab Plush.html"
+    },
+    {
+      "image": "Boar Plush.png",
+      "name": "Boar Plush",
+      "buy": 100,
+      "sell": 50,
+      "link": "Boar Plush.html"
+    },
+    {
+      "image": "Boar Plush.png",
+      "name": "Boar Plush",
+      "buy": 100,
+      "sell": 50,
+      "link": "Boar Plush.html"
     }
   ]
 }
