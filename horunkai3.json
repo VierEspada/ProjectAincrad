@@ -5,11 +5,11 @@
 
   "items": [
     {
-      "image": "Lantern.png",
-      "name": "Lantern",
-      "buy": 2500,
-      "sell": 1250,
-      "link": "Lantern.html"
+      "image": "Scuttle Crab Plush.png",
+      "name": "Scuttle Crab Plush",
+      "buy": 300,
+      "sell": 150,
+      "link": "Scuttle Crab Plush.html"
     }
   ]
 }
