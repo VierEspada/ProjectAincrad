@@ -19,11 +19,39 @@
       "link": "Boar Plush.html"
     },
     {
-      "image": "Boar Plush.png",
-      "name": "Boar Plush",
+      "image": "Nepenthes Plush.png",
+      "name": "Nepenthes Plush",
       "buy": 100,
       "sell": 50,
-      "link": "Boar Plush.html"
+      "link": "Nepenthes Plush.html"
+    },
+    {
+      "image": "Wasp Plush.png",
+      "name": "Wasp Plush",
+      "buy": 100,
+      "sell": 50,
+      "link": "Wasp Plush.html"
+    },
+    {
+      "image": "Wolf Plush.png",
+      "name": "Wolf Plush",
+      "buy": 100,
+      "sell": 50,
+      "link": "Wolf Plush.html"
+    },
+    {
+      "image": "Rat Plush.png",
+      "name": "Rat Plush",
+      "buy": 300,
+      "sell": 150,
+      "link": "Rat Plush.html"
+    },
+    {
+      "image": "Baby Bell.png",
+      "name": "Baby Bell",
+      "buy": 100,
+      "sell": 50,
+      "link": "Baby Bell.html"
     }
   ]
 }
