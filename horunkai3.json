@@ -1,0 +1,15 @@
+{
+  "name": "Evie's item Shop",
+  "image": "horunkai3.png",
+  "description": "人形を買える。",
+
+  "items": [
+    {
+      "image": "Lantern.png",
+      "name": "Lantern",
+      "buy": 2500,
+      "sell": 1250,
+      "link": "Lantern.html"
+    }
+  ]
+}
