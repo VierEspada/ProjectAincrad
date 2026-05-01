@@ -6,6 +6,7 @@ fetch("horunka.json")
     createList("zakkaList", data.zakka);
     createList("questList", data.quests);
     createList("chestList", data.chests);
+    createList("ryokanList", data.ryokan);
   });
 
 function createList(id, items) {
